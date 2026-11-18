@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CE 6405 — Earth Dams &amp; Stability of Slopes | Mohaimenul Islam</title>
+<script>
+  (function() {
+    try {
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@1/dist/umd/lucide.min.js"></script>
+<link rel="stylesheet" href="../assets/msc/course-page.css">
+</head>
+<body>
+
+<nav aria-label="Course Navigation">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="../index.html#home" class="nav-logo">MI.</a>
+      <a href="../index.html#coursework" class="back-link">
+        <i data-lucide="arrow-left" style="width:15px;height:15px;"></i>
+        <span>Back to Portfolio</span>
+      </a>
+    </div>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch to light theme">
+      <i data-lucide="sun" id="theme-icon" style="width:16px;height:16px;"></i>
+      <span class="theme-label" id="theme-label">Light</span>
+    </button>
+  </div>
+  <div class="course-switcher">
+    <div class="course-switcher-inner" aria-label="Switch M.Sc. course">
+      <a href="ce6401.html" class="course-pill">CE 6401</a>
+      <a href="ce6403.html" class="course-pill">CE 6403</a>
+      <a href="ce6405.html" class="course-pill active" aria-current="page">CE 6405</a>
+      <a href="ce6409.html" class="course-pill">CE 6409</a>
+      <a href="ce6410.html" class="course-pill">CE 6410</a>
+      <a href="ce6411.html" class="course-pill">CE 6411</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="course-hero">
+    <div class="course-eyebrow">BUET M.Sc. in Civil Engineering &middot; Coursework</div>
+    <h1>CE 6405 — Earth Dams &amp; Stability of Slopes</h1>
+    <p class="course-overview-text">Focuses on limit-equilibrium slope stability methods (Simplified Bishop), steady-state and transient seepage analysis in GeoStudio SEEP/W, rapid and gradual reservoir drawdown stability in SLOPE/W, bentonite cutoff walls, soft-clay embankment stabilization, and tailings dam failure case study review (Brumadinho Dam).</p>
+    <div class="course-meta-tags">
+      <span class="course-tag">SEEP/W Flow Nets</span>
+      <span class="course-tag">SLOPE/W Drawdown</span>
+      <span class="course-tag">Earth Dam Cutoffs</span>
+      <span class="course-tag">Soft Clay Embankments</span>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-block-title">
+      <i data-lucide="images"></i>
+      <span>Analysis Snaps (Click to Enlarge)</span>
+    </h2>
+    <div class="snap-grid">
+      <article class="snap-card">
+        <button type="button" class="snap-thumb" aria-label="Enlarge snap: Zoned Earth Dam Seepage &amp; Phreatic Surface">
+          <img src="../assets/msc/snaps/snap-seepw-flownet.jpg" alt="GeoStudio SEEP/W steady-state flow net and phreatic surface through a 300 ft zoned earth dam with 200 ft bentonite cutoff wall" loading="lazy">
+          <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
+        </button>
+        <div class="snap-body">
+          <div class="snap-meta">CE 6405 &middot; Course Project &middot; SEEP/W</div>
+          <h3 class="snap-title">Zoned Earth Dam Seepage &amp; Phreatic Surface</h3>
+          <p class="snap-caption">Steady-state SEEP/W flow net of a 300 ft zoned earth dam with a 200 ft bentonite slurry cutoff wall yielding 87.4 GPD seepage.</p>
+        </div>
+      </article>
+
+      <article class="snap-card">
+        <button type="button" class="snap-thumb" aria-label="Enlarge snap: Upstream Rapid Drawdown Stability (FOS = 1.534)">
+          <img src="../assets/msc/snaps/snap-slopew-rapid-drawdown.jpg" alt="GeoStudio SLOPE/W upstream rapid drawdown critical slip surface showing FOS 1.534" loading="lazy">
+          <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
+        </button>
+        <div class="snap-body">
+          <div class="snap-meta">CE 6405 &middot; Course Project &middot; SLOPE/W</div>
+          <h3 class="snap-title">Upstream Rapid Drawdown Stability (FOS = 1.534)</h3>
+          <p class="snap-caption">Critical slip surface along the upstream embankment shell under rapid reservoir drawdown (stabilized FOS = 1.534; Day-1 minimum = 1.519).</p>
+        </div>
+      </article>
+
+      <article class="snap-card">
+        <button type="button" class="snap-thumb" aria-label="Enlarge snap: Transient Rapid Drawdown FOS vs. Time">
+          <img src="../assets/msc/snaps/snap-slopew-fos-time.jpg" alt="Factor of Safety versus elapsed time curve during rapid reservoir drawdown stabilizing near FOS 1.534" loading="lazy">
+          <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
+        </button>
+        <div class="snap-body">
+          <div class="snap-meta">CE 6405 &middot; Course Project &middot; SLOPE/W</div>
+          <h3 class="snap-title">Transient Rapid Drawdown FOS vs. Time</h3>
+          <p class="snap-caption">Coupled seepage-stability time-history plot tracking upstream factor of safety recovery toward 1.534.</p>
+        </div>
+      </article>
+
+      <article class="snap-card">
+        <button type="button" class="snap-thumb" aria-label="Enlarge snap: Downstream Broken Slope Stability (FOS = 1.661)">
+          <img src="../assets/msc/snaps/snap-slopew-downstream.png" alt="GeoStudio SLOPE/W downstream broken slope stability model with FOS 1.661" loading="lazy">
+          <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
+        </button>
+        <div class="snap-body">
+          <div class="snap-meta">CE 6405 &middot; Course Project &middot; SLOPE/W</div>
+          <h3 class="snap-title">Downstream Broken Slope Stability (FOS = 1.661)</h3>
+          <p class="snap-caption">Limit-equilibrium slip surface search across the benched downstream slope geometry under steady-state phreatic conditions.</p>
+        </div>
+      </article>
+
+      <article class="snap-card">
+        <button type="button" class="snap-thumb" aria-label="Enlarge snap: N1 Highway Embankment Seismic Stability (FOS = 1.109)">
+          <img src="../assets/msc/snaps/snap-n1-highway-slopew.jpg" alt="SLOPE/W Simplified Bishop pseudo-static seismic stability analysis for N1 Highway embankment in Cumilla showing FOS 1.109" loading="lazy">
+          <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
+        </button>
+        <div class="snap-body">
+          <div class="snap-meta">CE 6405 &middot; Solo Term Paper &middot; SLOPE/W</div>
+          <h3 class="snap-title">N1 Highway Embankment Seismic Stability (FOS = 1.109)</h3>
+          <p class="snap-caption">BNBC Zone-02 pseudo-static analysis over 20 m+ soft clay in Cumilla stabilized with geotextiles and 10 m sand compaction piles.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="info-note">
+      <strong>Note:</strong> The four zoned earth dam SEEP/W &amp; SLOPE/W snaps above are from our team GeoStudio modeling project; only the solo-authored N1 Highway Term Paper PDF is linked below.
+    </div>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-block-title">
+      <i data-lucide="file-text"></i>
+      <span>Term Paper Report (Solo Submission, PDF)</span>
+    </h2>
+    <div class="report-grid single">
+      <article class="report-card">
+        <div class="report-top">
+          <span class="report-badge"><i data-lucide="file-text"></i> Term Paper</span>
+          <span class="report-pages">11 pages &middot; PDF</span>
+        </div>
+        <h3 class="report-title">N1 Highway Embankment Slope Stability Over Soft Clay, Cumilla</h3>
+        <p class="report-desc">Multi-stage SLOPE/W (Simplified Bishop) evaluation for during-construction (FOS = 2.207), post-construction (2.048), and BNBC Zone-02 seismic (1.109) loading conditions using geotextiles and 10 m sand compaction piles.</p>
+        <div class="report-actions">
+          <a href="../assets/msc/reports/CE6405_N1_Highway_Slope_Stability.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+            View PDF
+          </a>
+          <a href="../assets/msc/reports/CE6405_N1_Highway_Slope_Stability.pdf" download="CE6405_N1_Highway_Slope_Stability.pdf" class="btn btn-primary">
+            <i data-lucide="download" style="width:15px;height:15px;"></i>
+            Download PDF
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="course-pager">
+    <a href="ce6403.html" class="pager-link">
+      <i data-lucide="arrow-left" style="width:16px;height:16px;"></i>
+      <span>Prev: CE 6403 — Foundation Analysis Methods</span>
+    </a>
+    <a href="ce6409.html" class="pager-link">
+      <span>Next: CE 6409 — Reinforced Earth</span>
+      <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+    </a>
+  </div>
+</main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+  <div class="lightbox-dialog">
+    <div class="lightbox-topbar">
+      <span id="lightbox-meta" class="lightbox-meta"></span>
+      <span id="lightbox-count" class="lightbox-count"></span>
+      <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close image preview">
+        <i data-lucide="x" style="width:18px;height:18px;"></i>
+      </button>
+    </div>
+    <div class="lightbox-stage">
+      <img id="lightbox-img" alt="">
+    </div>
+    <div class="lightbox-footer">
+      <div class="lightbox-caption-wrap">
+        <h3 id="lightbox-title" class="lightbox-title"></h3>
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+      </div>
+      <div class="lightbox-nav">
+        <button type="button" id="lightbox-prev" class="lightbox-nav-btn" aria-label="Previous snap">
+          <i data-lucide="chevron-left" style="width:16px;height:16px;"></i>
+          Prev
+        </button>
+        <button type="button" id="lightbox-next" class="lightbox-nav-btn" aria-label="Next snap">
+          Next
+          <i data-lucide="chevron-right" style="width:16px;height:16px;"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <strong>Mohaimenul Islam</strong> &mdash; BUET M.Sc. Coursework Archive
+</footer>
+
+<script src="../assets/msc/course-page.js"></script>
+</body>
+</html>

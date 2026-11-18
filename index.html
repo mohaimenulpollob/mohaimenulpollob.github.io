@@ -1467,12 +1467,11 @@
     color: var(--accent);
   }
 
-  /* M.Sc. Coursework & Technical Showcase */
+  /* M.Sc. Coursework Cards */
   .course-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     gap: 1.35rem;
-    margin-bottom: 3rem;
   }
 
   .course-card {
@@ -1483,10 +1482,11 @@
     display: flex;
     flex-direction: column;
     transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
   }
 
   .course-card:hover {
-    border-color: var(--accent2);
+    border-color: var(--accent);
     transform: translateY(-3px);
     box-shadow: var(--shadow);
   }
@@ -1527,6 +1527,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.42rem;
+    margin-bottom: 1.05rem;
   }
 
   .course-tag {
@@ -1539,415 +1540,43 @@
     font-weight: 500;
   }
 
-  .showcase-header {
+  .course-card-footer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 1rem 1.5rem;
-    margin-bottom: 1.35rem;
-  }
-
-  .showcase-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-  }
-
-  .showcase-sub {
-    color: var(--muted);
-    font-size: 0.96rem;
-  }
-
-  .showcase-tabs {
-    margin-bottom: 0;
-  }
-
-  .showcase-group {
-    margin-top: 1.5rem;
-  }
-
-  .showcase-group.is-hidden {
-    display: none;
-  }
-
-  .showcase-group-label {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.84rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--accent2);
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .showcase-group-label svg {
-    width: 16px;
-    height: 16px;
-  }
-
-  .snap-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.25rem;
-  }
-
-  .snap-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
-  }
-
-  .snap-card.is-hidden {
-    display: none;
-  }
-
-  .snap-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
-  }
-
-  .snap-thumb {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    background: #ffffff;
-    border: none;
-    border-bottom: 1px solid var(--border);
-    padding: 0.45rem;
-    cursor: zoom-in;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .snap-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-    transition: transform 0.25s ease;
-  }
-
-  .snap-card:hover .snap-thumb img {
-    transform: scale(1.02);
-  }
-
-  .snap-zoom-pill {
-    position: absolute;
-    right: 0.55rem;
-    bottom: 0.55rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    padding: 0.25rem 0.55rem;
-    border-radius: 999px;
-    background: rgba(24, 24, 28, 0.84);
-    color: #ece9e2;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    pointer-events: none;
-  }
-
-  .snap-zoom-pill svg {
-    width: 12px;
-    height: 12px;
-  }
-
-  .snap-body {
-    padding: 1.05rem 1.15rem 1.15rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    flex: 1;
-  }
-
-  .snap-meta {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accent);
-  }
-
-  .snap-meta.assignment {
-    color: var(--accent2);
-  }
-
-  .snap-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.98rem;
-    font-weight: 600;
-    line-height: 1.35;
-  }
-
-  .snap-caption {
-    color: var(--muted);
-    font-size: 0.88rem;
-    line-height: 1.55;
-  }
-
-  .report-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.25rem;
-  }
-
-  @media (max-width: 760px) {
-    .report-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .report-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.4rem;
-    display: flex;
-    flex-direction: column;
     gap: 0.75rem;
-    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 0.82rem;
   }
 
-  .report-card:hover {
-    border-color: var(--accent2);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
+  .course-meta-count {
+    color: var(--muted);
+    font-weight: 500;
   }
 
-  .report-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.65rem;
-    flex-wrap: wrap;
-  }
-
-  .report-badge {
+  .course-cta {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    padding: 0.22rem 0.62rem;
-    border-radius: 999px;
-    background: var(--accent-soft);
-    border: 1px solid var(--accent);
     color: var(--accent);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.74rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  }
-
-  .report-badge svg {
-    width: 13px;
-    height: 13px;
-  }
-
-  .report-pages {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.78rem;
-    color: var(--muted);
     font-weight: 600;
   }
 
-  .report-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.04rem;
-    font-weight: 600;
-    line-height: 1.35;
+  .course-cta svg {
+    width: 15px;
+    height: 15px;
+    transition: transform 0.2s ease;
   }
 
-  .report-desc {
-    color: var(--muted);
-    font-size: 0.91rem;
-    line-height: 1.58;
-    flex: 1;
-  }
-
-  .report-actions {
-    display: flex;
-    gap: 0.65rem;
-    flex-wrap: wrap;
-    padding-top: 0.25rem;
-  }
-
-  /* Lightbox Modal */
-  .lightbox {
-    position: fixed;
-    inset: 0;
-    z-index: 2000;
-    background: rgba(14, 14, 18, 0.88);
-    backdrop-filter: blur(8px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.25rem;
-  }
-
-  .lightbox[hidden] {
-    display: none;
-  }
-
-  .lightbox-dialog {
-    position: relative;
-    width: min(980px, 100%);
-    max-height: 92vh;
-    background: var(--card);
-    border: 1px solid var(--border-strong);
-    border-radius: 14px;
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
-  .lightbox-topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding: 0.85rem 1.15rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .lightbox-meta {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-  }
-
-  .lightbox-count {
-    color: var(--muted);
-    font-size: 0.82rem;
-    font-family: 'Chakra Petch', sans-serif;
-    margin-left: auto;
-  }
-
-  .lightbox-close {
-    width: 34px;
-    height: 34px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    color: var(--text);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: border-color 0.2s ease, color 0.2s ease;
-  }
-
-  .lightbox-close:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  .lightbox-stage {
-    background: #ffffff;
-    padding: 0.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 240px;
-    max-height: 62vh;
-    overflow: auto;
-  }
-
-  .lightbox-stage img {
-    max-width: 100%;
-    max-height: 58vh;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    display: block;
-  }
-
-  .lightbox-footer {
-    padding: 0.95rem 1.15rem;
-    border-top: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .lightbox-caption-wrap {
-    flex: 1 1 320px;
-    min-width: 0;
-  }
-
-  .lightbox-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-  }
-
-  .lightbox-caption {
-    color: var(--muted);
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-
-  .lightbox-nav {
-    display: inline-flex;
-    gap: 0.5rem;
-    flex-shrink: 0;
-  }
-
-  .lightbox-nav-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    padding: 0.45rem 0.85rem;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.84rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: border-color 0.2s ease, color 0.2s ease;
-  }
-
-  .lightbox-nav-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
+  .course-card:hover .course-cta svg {
+    transform: translateX(3px);
   }
 
   @media (max-width: 600px) {
-    .course-grid,
-    .snap-grid,
-    .report-grid {
+    .course-grid {
       grid-template-columns: 1fr;
-    }
-
-    .lightbox {
-      padding: 0.65rem;
-    }
-
-    .lightbox-stage {
-      max-height: 52vh;
     }
   }
 
@@ -2289,12 +1918,12 @@
     <div class="section-inner">
       <div class="section-header reveal">
         <div class="section-label">04 — BUET M.Sc. Coursework</div>
-        <h2 class="section-title">Graduate Courses &amp; Technical Work</h2>
-        <p class="section-subtitle">Six specialized geotechnical courses completed during my M.Sc. in Civil (Geotechnical) Engineering at BUET, supported by finite element models, limit-equilibrium analyses, handwritten derivations, and technical reports.</p>
+        <h2 class="section-title">Graduate Coursework</h2>
+        <p class="section-subtitle">Six geotechnical courses taken during my M.Sc. in Civil Engineering at BUET. Select any course to view its syllabus overview, coursework snaps, and reports.</p>
       </div>
 
       <div class="course-grid">
-        <article class="course-card reveal">
+        <a href="courses/ce6401.html" class="course-card reveal">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="layers"></i></div>
             <div>
@@ -2302,16 +1931,20 @@
               <h3 class="course-title">Soil Mechanics I</h3>
             </div>
           </div>
-          <p class="course-desc">Covers clay mineralogy and soil fabric, engineering identification and classification, 1D/3D consolidation theory, triaxial and direct shear strength behavior, and bearing capacity formulations.</p>
+          <p class="course-desc">Covers clay mineralogy and soil fabric, identification and classification, 1D consolidation theory, triaxial and direct shear strength behavior, and bearing capacity theory.</p>
           <div class="course-tags">
             <span class="course-tag">Soil Mineralogy</span>
             <span class="course-tag">Consolidation Theory</span>
             <span class="course-tag">Shear Strength</span>
             <span class="course-tag">Bearing Capacity</span>
           </div>
-        </article>
+          <div class="course-card-footer">
+            <span class="course-meta-count">Course overview &amp; topics</span>
+            <span class="course-cta">Open page <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
 
-        <article class="course-card reveal">
+        <a href="courses/ce6403.html" class="course-card reveal">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="compass"></i></div>
             <div>
@@ -2319,16 +1952,20 @@
               <h3 class="course-title">Foundation Analysis Methods</h3>
             </div>
           </div>
-          <p class="course-desc">Analyzes elastic slabs on Winkler springs vs. continuum half-spaces, soil-structure interaction for mats and footings (PLAXIS 3D, SAFE/ETABS), laterally loaded piles (<em>p-y</em> curves), negative skin friction, and BNBC 2020 practice.</p>
+          <p class="course-desc">Covers elastic slabs on Winkler springs vs. continuum half-spaces, soil-structure interaction for mats and footings (PLAXIS 3D, SAFE/ETABS), laterally loaded piles (<em>p-y</em> curves), and BNBC 2020 practice.</p>
           <div class="course-tags">
             <span class="course-tag">PLAXIS 3D Mat Design</span>
             <span class="course-tag">Soil-Structure Interaction</span>
             <span class="course-tag">Laterally Loaded Piles</span>
             <span class="course-tag">Soil Replacement</span>
           </div>
-        </article>
+          <div class="course-card-footer">
+            <span class="course-meta-count">3 snaps &middot; 4 reports</span>
+            <span class="course-cta">Open page <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
 
-        <article class="course-card reveal">
+        <a href="courses/ce6405.html" class="course-card reveal">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="mountain"></i></div>
             <div>
@@ -2336,16 +1973,20 @@
               <h3 class="course-title">Earth Dams &amp; Stability of Slopes</h3>
             </div>
           </div>
-          <p class="course-desc">Focuses on limit-equilibrium slope stability (Simplified Bishop), steady-state and transient SEEP/W flow nets, rapid vs. gradual drawdown in SLOPE/W, bentonite cutoff walls, and tailings dam failure forensics (Brumadinho Dam).</p>
+          <p class="course-desc">Covers limit-equilibrium slope stability (Simplified Bishop), steady-state and transient SEEP/W flow nets, rapid vs. gradual drawdown in SLOPE/W, cutoff walls, and dam failure case studies.</p>
           <div class="course-tags">
             <span class="course-tag">SEEP/W Flow Nets</span>
             <span class="course-tag">SLOPE/W Drawdown</span>
             <span class="course-tag">Earth Dam Cutoffs</span>
-            <span class="course-tag">Soft Clay SCPs</span>
+            <span class="course-tag">Soft Clay Embankments</span>
           </div>
-        </article>
+          <div class="course-card-footer">
+            <span class="course-meta-count">5 snaps &middot; 1 term paper</span>
+            <span class="course-cta">Open page <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
 
-        <article class="course-card reveal">
+        <a href="courses/ce6409.html" class="course-card reveal">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="shield-check"></i></div>
             <div>
@@ -2353,16 +1994,20 @@
               <h3 class="course-title">Reinforced Earth</h3>
             </div>
           </div>
-          <p class="course-desc">Examines Rankine and Coulomb earth pressures, precast MSE vs. GRS retaining wall stability and cost benchmarking, cut-slope stabilization via soil nailing, gabions, and bioengineering practices across Bangladesh.</p>
+          <p class="course-desc">Covers Rankine and Coulomb earth pressures, precast MSE vs. GRS retaining wall stability and cost comparison, cut-slope stabilization via soil nailing, gabions, and bioengineering options.</p>
           <div class="course-tags">
             <span class="course-tag">MSE vs. GRS Walls</span>
             <span class="course-tag">Soil Nailing</span>
             <span class="course-tag">Earth Pressure Theory</span>
             <span class="course-tag">Geosynthetics</span>
           </div>
-        </article>
+          <div class="course-card-footer">
+            <span class="course-meta-count">2 snaps &middot; 4 reports</span>
+            <span class="course-cta">Open page <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
 
-        <article class="course-card reveal">
+        <a href="courses/ce6410.html" class="course-card reveal">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="cpu"></i></div>
             <div>
@@ -2370,16 +2015,20 @@
               <h3 class="course-title">Constitutive Modeling of Soil Mechanics</h3>
             </div>
           </div>
-          <p class="course-desc">Develops continuum stress/strain tensors, invariants and octahedral stress, Tresca &amp; von Mises (<em>J</em><sub>2</sub>) yield criteria, Prandtl-Reuss flow rules, isotropic/kinematic hardening, and backward Euler return mapping with consistent tangent operators.</p>
+          <p class="course-desc">Covers continuum stress/strain tensors, invariants and octahedral stress, Tresca &amp; von Mises (<em>J</em><sub>2</sub>) yield criteria, Prandtl-Reuss flow rules, hardening models, and backward Euler return mapping.</p>
           <div class="course-tags">
             <span class="course-tag">Stress-Strain Tensors</span>
             <span class="course-tag">J2 Plasticity</span>
             <span class="course-tag">Hardening Rules</span>
             <span class="course-tag">Return Mapping</span>
           </div>
-        </article>
+          <div class="course-card-footer">
+            <span class="course-meta-count">Course overview &amp; topics</span>
+            <span class="course-cta">Open page <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
 
-        <article class="course-card reveal">
+        <a href="courses/ce6411.html" class="course-card reveal">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="activity"></i></div>
             <div>
@@ -2387,257 +2036,18 @@
               <h3 class="course-title">Earthquake Engineering</h3>
             </div>
           </div>
-          <p class="course-desc">Covers seismic magnitude/intensity scales, ground-motion attenuation laws, liquefaction triggering via cyclic stress ratio (CSR) evaluation, tsunami hazards (2011 Japan), and port lateral spreading case studies (2010 Haiti).</p>
+          <p class="course-desc">Covers seismic magnitude/intensity scales, ground-motion attenuation laws, liquefaction triggering via cyclic stress ratio (CSR) evaluation, tsunami hazards, and lateral spreading case review.</p>
           <div class="course-tags">
             <span class="course-tag">Liquefaction CSR</span>
             <span class="course-tag">Attenuation Laws</span>
             <span class="course-tag">Lateral Spreading</span>
             <span class="course-tag">Seismic Hazards</span>
           </div>
-        </article>
-      </div>
-
-      <!-- Technical Showcase: Analysis Snaps, Assignment Snaps & Solo Report Samples -->
-      <div class="showcase-header reveal">
-        <div>
-          <h3 class="showcase-title">Analysis Snaps, Assignments &amp; Report Samples</h3>
-          <p class="showcase-sub">Click any model or assignment snap to inspect full resolution, or open and download solo-authored PDF reports.</p>
-        </div>
-
-        <div class="filter-bar showcase-tabs" role="tablist" aria-label="Filter coursework artifacts">
-          <button type="button" class="filter-btn showcase-tab active" data-showcase="all" role="tab" aria-selected="true">All Items (15)</button>
-          <button type="button" class="filter-btn showcase-tab" data-showcase="analysis" role="tab" aria-selected="false">Analysis Snaps (7)</button>
-          <button type="button" class="filter-btn showcase-tab" data-showcase="assignment" role="tab" aria-selected="false">Assignment Snaps (4)</button>
-          <button type="button" class="filter-btn showcase-tab" data-showcase="report" role="tab" aria-selected="false">Report Samples (4)</button>
-        </div>
-      </div>
-
-      <!-- Snaps Group (Analysis + Assignment) -->
-      <div id="showcase-snaps-group" class="showcase-group">
-        <div class="showcase-group-label" id="snaps-group-heading">
-          <i data-lucide="images"></i>
-          <span>Analysis &amp; Assignment Snaps (Click to Enlarge)</span>
-        </div>
-
-        <div class="snap-grid">
-          <article class="snap-card reveal" data-kind="analysis">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: Zoned Earth Dam Seepage &amp; Phreatic Surface">
-              <img src="assets/msc/snaps/snap-seepw-flownet.jpg" alt="GeoStudio SEEP/W steady-state flow net and phreatic surface through a 300 ft zoned earth dam with 200 ft bentonite cutoff wall" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta">CE 6405 &middot; Analysis Snap &middot; SEEP/W</div>
-              <h4 class="snap-title">Zoned Earth Dam Seepage &amp; Phreatic Surface</h4>
-              <p class="snap-caption">Steady-state SEEP/W flow net with a 200 ft bentonite slurry cutoff wall limiting core/foundation seepage to 87.4 GPD.</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="analysis">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: Upstream Rapid Drawdown Stability (FOS = 1.534)">
-              <img src="assets/msc/snaps/snap-slopew-rapid-drawdown.jpg" alt="GeoStudio SLOPE/W upstream rapid drawdown critical slip surface showing FOS 1.534" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta">CE 6405 &middot; Analysis Snap &middot; SLOPE/W</div>
-              <h4 class="snap-title">Upstream Rapid Drawdown Stability (FOS = 1.534)</h4>
-              <p class="snap-caption">Critical slip surface along the upstream embankment shell under rapid reservoir drawdown (stabilized FOS = 1.534; Day-1 minimum = 1.519).</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="analysis">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: Transient Rapid Drawdown FOS vs. Time">
-              <img src="assets/msc/snaps/snap-slopew-fos-time.jpg" alt="Factor of Safety versus elapsed time curve during rapid reservoir drawdown stabilizing near FOS 1.534" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta">CE 6405 &middot; Analysis Snap &middot; SLOPE/W</div>
-              <h4 class="snap-title">Transient Rapid Drawdown FOS vs. Time</h4>
-              <p class="snap-caption">Coupled seepage-stability time-history curve tracking upstream FOS recovery and stabilization near 1.534.</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="analysis">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: Downstream Broken Slope Stability (FOS = 1.661)">
-              <img src="assets/msc/snaps/snap-slopew-downstream.png" alt="GeoStudio SLOPE/W downstream broken slope stability model with FOS 1.661" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta">CE 6405 &middot; Analysis Snap &middot; SLOPE/W</div>
-              <h4 class="snap-title">Downstream Broken Slope Stability (FOS = 1.661)</h4>
-              <p class="snap-caption">Limit-equilibrium critical slip search across the benched downstream slope geometry under steady-state phreatic conditions.</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="analysis">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: N1 Highway Embankment Seismic Stability (FOS = 1.109)">
-              <img src="assets/msc/snaps/snap-n1-highway-slopew.jpg" alt="SLOPE/W Simplified Bishop pseudo-static seismic stability analysis for N1 Highway embankment in Cumilla showing FOS 1.109" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta">CE 6405 &middot; Analysis Snap &middot; Term Paper</div>
-              <h4 class="snap-title">N1 Highway Embankment Seismic Stability (FOS = 1.109)</h4>
-              <p class="snap-caption">BNBC Zone-02 pseudo-static analysis over 20 m+ soft clay in Cumilla stabilized with geotextiles and 10 m sand compaction piles.</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="analysis">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: 20-Story Mat Foundation Settlement Contours">
-              <img src="assets/msc/snaps/snap-plaxis3d-mat-settlement.jpg" alt="PLAXIS 3D total vertical settlement contours for 20-story mat foundation in Bashundhara Dhaka showing 135.4 mm max settlement" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta">CE 6403 &middot; Analysis Snap &middot; PLAXIS 3D</div>
-              <h4 class="snap-title">20-Story Mat Foundation Settlement Contours</h4>
-              <p class="snap-caption">Bashundhara mat foundation 3D displacement contours (<em>&delta;</em><sub>max</sub> = 135.4 mm, angular distortion 1/519) supporting piled-raft redesign.</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="analysis">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: 3D Finite Element Mesh &amp; Stratigraphy Model">
-              <img src="assets/msc/snaps/snap-plaxis3d-mat-model.jpg" alt="PLAXIS 3D full soil-structure finite element model geometry for multi-story mat foundation" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta">CE 6403 &middot; Analysis Snap &middot; PLAXIS 3D</div>
-              <h4 class="snap-title">3D Finite Element Mesh &amp; Stratigraphy Model</h4>
-              <p class="snap-caption">Full 3D soil-foundation continuum model incorporating multi-borehole Dhaka clay/sand profiles and column load transfer.</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="assignment">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: 2,000-Ton Drilling Pad Settlement &amp; Shear Check">
-              <img src="assets/msc/snaps/assign-drilling-pad-calc.jpg" alt="CE 6403 Assignment 1 analytical settlement and punching shear calculation excerpt for a 5m x 8m 2000-ton drilling pad" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta assignment">CE 6403 &middot; Assignment Snap &middot; Assignment 1</div>
-              <h4 class="snap-title">2,000-Ton Drilling Pad Settlement &amp; Shear Check</h4>
-              <p class="snap-caption">Design calculation upgrading an initial FS = 0.28 bearing failure via 5 m granular replacement (50.8 mm settlement) plus punching shear &amp; rebar checks.</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="assignment">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: Precast MSE Retaining Wall Typical Cross-Section">
-              <img src="assets/msc/snaps/assign-mse-wall-section.jpg" alt="CE 6409 Term Paper 1 precast MSE retaining wall typical structural and reinforcement strip cross-section" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta assignment">CE 6409 &middot; Assignment Snap &middot; Term Paper 1</div>
-              <h4 class="snap-title">Precast MSE Retaining Wall Typical Section</h4>
-              <p class="snap-caption">Reinforced backfill strip configuration and precast panel detailing prepared to benchmark MSE ($7.44M) vs. GRS ($9.01M) over 4.5 km.</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="assignment">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: Soil-Nailed Slope Method-of-Slices Formulation">
-              <img src="assets/msc/snaps/assign-soil-nailing-slices.jpg" alt="CE 6409 Term Paper 2 soil nailing limit equilibrium slice diagram and derivation for Rangamati slope stabilization" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta assignment">CE 6409 &middot; Assignment Snap &middot; Term Paper 2</div>
-              <h4 class="snap-title">Soil-Nailed Slope Method-of-Slices Formulation</h4>
-              <p class="snap-caption">Slice equilibrium and nail tensile pullout formulation for Rangamati cut-slope stabilization (raising FOS from 1.29 to 2.10 with 8 m nails).</p>
-            </div>
-          </article>
-
-          <article class="snap-card reveal" data-kind="assignment">
-            <button type="button" class="snap-thumb" aria-label="Enlarge snap: Handwritten Seismic Liquefaction CSR Derivation">
-              <img src="assets/msc/snaps/assign-earthquake-csr.jpg" alt="CE 6411 Assignment 3 handwritten seismic liquefaction cyclic stress ratio CSR calculation yielding 0.345" loading="lazy">
-              <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
-            </button>
-            <div class="snap-body">
-              <div class="snap-meta assignment">CE 6411 &middot; Assignment Snap &middot; Assignment 3</div>
-              <h4 class="snap-title">Handwritten Seismic Liquefaction CSR Derivation</h4>
-              <p class="snap-caption">Step-by-step Cyclic Stress Ratio evaluation yielding CSR = 0.345 (<em>a</em><sub>max</sub> = 0.45g, <em>r</em><sub>d</sub> = 0.964) for seismic liquefaction assessment.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <!-- Solo Report Samples -->
-      <div id="showcase-reports-group" class="showcase-group">
-        <div class="showcase-group-label">
-          <i data-lucide="file-text"></i>
-          <span>Solo-Authored Technical Report Samples (PDF)</span>
-        </div>
-
-        <div class="report-grid">
-          <article class="report-card reveal">
-            <div class="report-top">
-              <span class="report-badge"><i data-lucide="file-text"></i> CE 6403 &middot; Solo Report</span>
-              <span class="report-pages">9 pages &middot; PDF</span>
-            </div>
-            <h4 class="report-title">Mat Foundation Design — 20-Story Building, Lalbagh, Dhaka</h4>
-            <p class="report-desc">Bearing capacity verification (<em>q</em><sub>applied</sub> = 162.27 kPa &lt; <em>q</em><sub>allow</sub> = 473.4 kPa) coupled with PLAXIS 3D settlement modeling (<em>&delta;</em><sub>max</sub> = 38.83 mm, angular distortion 1/2243).</p>
-            <div class="report-actions">
-              <a href="assets/msc/reports/CE6403_Mat_Foundation_Design_Lalbagh.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.5rem 0.9rem; font-size:0.84rem;">
-                <i data-lucide="external-link" style="width:15px;height:15px;"></i>
-                View PDF
-              </a>
-              <a href="assets/msc/reports/CE6403_Mat_Foundation_Design_Lalbagh.pdf" download="CE6403_Mat_Foundation_Design_Lalbagh.pdf" class="btn btn-primary" style="padding:0.5rem 0.95rem; font-size:0.84rem;">
-                <i data-lucide="download" style="width:15px;height:15px;"></i>
-                Download PDF
-              </a>
-            </div>
-          </article>
-
-          <article class="report-card reveal">
-            <div class="report-top">
-              <span class="report-badge"><i data-lucide="file-text"></i> CE 6405 &middot; Term Paper</span>
-              <span class="report-pages">11 pages &middot; PDF</span>
-            </div>
-            <h4 class="report-title">N1 Highway Embankment Slope Stability Over Soft Clay, Cumilla</h4>
-            <p class="report-desc">Multi-stage SLOPE/W (Simplified Bishop) analysis across during-construction (FOS = 2.207), post-construction (2.048), and Zone-02 seismic (1.109) cases with geotextiles and 10 m SCPs.</p>
-            <div class="report-actions">
-              <a href="assets/msc/reports/CE6405_N1_Highway_Slope_Stability.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.5rem 0.9rem; font-size:0.84rem;">
-                <i data-lucide="external-link" style="width:15px;height:15px;"></i>
-                View PDF
-              </a>
-              <a href="assets/msc/reports/CE6405_N1_Highway_Slope_Stability.pdf" download="CE6405_N1_Highway_Slope_Stability.pdf" class="btn btn-primary" style="padding:0.5rem 0.95rem; font-size:0.84rem;">
-                <i data-lucide="download" style="width:15px;height:15px;"></i>
-                Download PDF
-              </a>
-            </div>
-          </article>
-
-          <article class="report-card reveal">
-            <div class="report-top">
-              <span class="report-badge"><i data-lucide="file-text"></i> CE 6409 &middot; Term Paper 1</span>
-              <span class="report-pages">6 pages &middot; PDF</span>
-            </div>
-            <h4 class="report-title">Comparative Study of Precast MSE vs. GRS Retaining Walls</h4>
-            <p class="report-desc">Internal/external stability comparison, detailing, and tender-level cost evaluation across a 4.5 km corridor contrasting precast MSE ($7.44M) against GRS ($9.01M).</p>
-            <div class="report-actions">
-              <a href="assets/msc/reports/CE6409_MSE_vs_GRS_Retaining_Wall.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.5rem 0.9rem; font-size:0.84rem;">
-                <i data-lucide="external-link" style="width:15px;height:15px;"></i>
-                View PDF
-              </a>
-              <a href="assets/msc/reports/CE6409_MSE_vs_GRS_Retaining_Wall.pdf" download="CE6409_MSE_vs_GRS_Retaining_Wall.pdf" class="btn btn-primary" style="padding:0.5rem 0.95rem; font-size:0.84rem;">
-                <i data-lucide="download" style="width:15px;height:15px;"></i>
-                Download PDF
-              </a>
-            </div>
-          </article>
-
-          <article class="report-card reveal">
-            <div class="report-top">
-              <span class="report-badge"><i data-lucide="file-text"></i> CE 6409 &middot; Term Paper 2</span>
-              <span class="report-pages">4 pages &middot; PDF</span>
-            </div>
-            <h4 class="report-title">Slope Stabilization Using Soil Nailing — Rangamati Case Study</h4>
-            <p class="report-desc">Method-of-slices formulation and bond/tensile capacity design illustrating cut-slope stabilization in hill tract terrain from FOS = 1.29 to 2.10 using 8 m soil nails.</p>
-            <div class="report-actions">
-              <a href="assets/msc/reports/CE6409_Soil_Nailing_Slope_Stabilization.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.5rem 0.9rem; font-size:0.84rem;">
-                <i data-lucide="external-link" style="width:15px;height:15px;"></i>
-                View PDF
-              </a>
-              <a href="assets/msc/reports/CE6409_Soil_Nailing_Slope_Stabilization.pdf" download="CE6409_Soil_Nailing_Slope_Stabilization.pdf" class="btn btn-primary" style="padding:0.5rem 0.95rem; font-size:0.84rem;">
-                <i data-lucide="download" style="width:15px;height:15px;"></i>
-                Download PDF
-              </a>
-            </div>
-          </article>
-        </div>
+          <div class="course-card-footer">
+            <span class="course-meta-count">1 snap &middot; 1 assignment</span>
+            <span class="course-cta">Open page <i data-lucide="arrow-right"></i></span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -2926,6 +2336,7 @@
             <span class="skill-tag">Settle3D</span>
             <span class="skill-tag">Unwedge</span>
             <span class="skill-tag">DIPS</span>
+            <span class="skill-tag">RocSupport</span>
           </div>
         </div>
         <div class="skill-category">
@@ -3180,38 +2591,6 @@
     </p>
   </div>
 </footer>
-
-<!-- Image Lightbox Modal -->
-<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
-  <div class="lightbox-dialog">
-    <div class="lightbox-topbar">
-      <span id="lightbox-meta" class="lightbox-meta"></span>
-      <span id="lightbox-count" class="lightbox-count"></span>
-      <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close image preview">
-        <i data-lucide="x" style="width:18px;height:18px;"></i>
-      </button>
-    </div>
-    <div class="lightbox-stage">
-      <img id="lightbox-img" alt="">
-    </div>
-    <div class="lightbox-footer">
-      <div class="lightbox-caption-wrap">
-        <h3 id="lightbox-title" class="lightbox-title"></h3>
-        <p id="lightbox-caption" class="lightbox-caption"></p>
-      </div>
-      <div class="lightbox-nav">
-        <button type="button" id="lightbox-prev" class="lightbox-nav-btn" aria-label="Previous snap">
-          <i data-lucide="chevron-left" style="width:16px;height:16px;"></i>
-          Prev
-        </button>
-        <button type="button" id="lightbox-next" class="lightbox-nav-btn" aria-label="Next snap">
-          Next
-          <i data-lucide="chevron-right" style="width:16px;height:16px;"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <script>
 (function() {
@@ -3505,165 +2884,6 @@
       });
     });
   }
-
-  // M.Sc. Coursework Showcase Tabs & Lightbox
-  var showcaseTabs = document.querySelectorAll('.showcase-tab');
-  var snapsGroup = document.getElementById('showcase-snaps-group');
-  var reportsGroup = document.getElementById('showcase-reports-group');
-  var snapCards = Array.prototype.slice.call(document.querySelectorAll('.snap-card'));
-  var snapsHeadingText = document.querySelector('#snaps-group-heading span');
-
-  function applyShowcaseTab(tab) {
-    var showSnapsGroup = tab === 'all' || tab === 'analysis' || tab === 'assignment';
-    var showReportsGroup = tab === 'all' || tab === 'report';
-
-    if (snapsGroup) {
-      snapsGroup.classList.toggle('is-hidden', !showSnapsGroup);
-    }
-    if (reportsGroup) {
-      reportsGroup.classList.toggle('is-hidden', !showReportsGroup);
-    }
-
-    if (snapsHeadingText) {
-      if (tab === 'analysis') {
-        snapsHeadingText.textContent = 'Analysis Snaps (Click to Enlarge)';
-      } else if (tab === 'assignment') {
-        snapsHeadingText.textContent = 'Assignment Snaps (Click to Enlarge)';
-      } else {
-        snapsHeadingText.textContent = 'Analysis & Assignment Snaps (Click to Enlarge)';
-      }
-    }
-
-    snapCards.forEach(function(card) {
-      var kind = card.getAttribute('data-kind');
-      var matches = tab === 'all' || kind === tab;
-      card.classList.toggle('is-hidden', !matches);
-      if (matches) {
-        card.classList.add('visible');
-      }
-    });
-
-    if (showReportsGroup && reportsGroup) {
-      reportsGroup.querySelectorAll('.reveal').forEach(function(el) {
-        el.classList.add('visible');
-      });
-    }
-  }
-
-  showcaseTabs.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      showcaseTabs.forEach(function(b) {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
-      applyShowcaseTab(btn.getAttribute('data-showcase') || 'all');
-    });
-  });
-
-  // Lightbox Modal for Analysis & Assignment Snaps
-  var lightbox = document.getElementById('lightbox');
-  var lightboxImg = document.getElementById('lightbox-img');
-  var lightboxMeta = document.getElementById('lightbox-meta');
-  var lightboxTitle = document.getElementById('lightbox-title');
-  var lightboxCaption = document.getElementById('lightbox-caption');
-  var lightboxCount = document.getElementById('lightbox-count');
-  var lightboxClose = document.getElementById('lightbox-close');
-  var lightboxPrev = document.getElementById('lightbox-prev');
-  var lightboxNext = document.getElementById('lightbox-next');
-  var activeSnapIndex = 0;
-  var lastFocusedEl = null;
-
-  function getVisibleSnapCards() {
-    return snapCards.filter(function(card) {
-      return !card.classList.contains('is-hidden');
-    });
-  }
-
-  function renderLightboxAt(index) {
-    var visibleCards = getVisibleSnapCards();
-    if (!visibleCards.length || !lightboxImg) return;
-    activeSnapIndex = (index + visibleCards.length) % visibleCards.length;
-    var card = visibleCards[activeSnapIndex];
-    var img = card.querySelector('img');
-    var meta = card.querySelector('.snap-meta');
-    var title = card.querySelector('.snap-title');
-    var caption = card.querySelector('.snap-caption');
-
-    if (img) {
-      lightboxImg.src = img.getAttribute('src') || '';
-      lightboxImg.alt = img.getAttribute('alt') || '';
-    }
-    if (lightboxMeta) lightboxMeta.textContent = meta ? meta.textContent : '';
-    if (lightboxTitle) lightboxTitle.textContent = title ? title.textContent : '';
-    if (lightboxCaption) lightboxCaption.textContent = caption ? caption.textContent : '';
-    if (lightboxCount) lightboxCount.textContent = (activeSnapIndex + 1) + ' / ' + visibleCards.length;
-  }
-
-  function openLightboxForCard(card) {
-    if (!lightbox) return;
-    var visibleCards = getVisibleSnapCards();
-    var idx = visibleCards.indexOf(card);
-    if (idx < 0) idx = 0;
-    lastFocusedEl = document.activeElement;
-    renderLightboxAt(idx);
-    lightbox.removeAttribute('hidden');
-    document.body.style.overflow = 'hidden';
-    renderIcons();
-    if (lightboxClose) lightboxClose.focus();
-  }
-
-  function closeLightbox() {
-    if (!lightbox || lightbox.hasAttribute('hidden')) return;
-    lightbox.setAttribute('hidden', '');
-    document.body.style.overflow = '';
-    if (lightboxImg) lightboxImg.removeAttribute('src');
-    if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
-      lastFocusedEl.focus();
-    }
-  }
-
-  snapCards.forEach(function(card) {
-    var thumbBtn = card.querySelector('.snap-thumb');
-    if (thumbBtn) {
-      thumbBtn.addEventListener('click', function() {
-        openLightboxForCard(card);
-      });
-    }
-  });
-
-  if (lightboxClose) {
-    lightboxClose.addEventListener('click', closeLightbox);
-  }
-  if (lightboxPrev) {
-    lightboxPrev.addEventListener('click', function() {
-      renderLightboxAt(activeSnapIndex - 1);
-    });
-  }
-  if (lightboxNext) {
-    lightboxNext.addEventListener('click', function() {
-      renderLightboxAt(activeSnapIndex + 1);
-    });
-  }
-  if (lightbox) {
-    lightbox.addEventListener('click', function(e) {
-      if (e.target === lightbox) {
-        closeLightbox();
-      }
-    });
-  }
-
-  document.addEventListener('keydown', function(e) {
-    if (!lightbox || lightbox.hasAttribute('hidden')) return;
-    if (e.key === 'Escape') {
-      closeLightbox();
-    } else if (e.key === 'ArrowLeft') {
-      renderLightboxAt(activeSnapIndex - 1);
-    } else if (e.key === 'ArrowRight') {
-      renderLightboxAt(activeSnapIndex + 1);
-    }
-  });
 })();
 </script>
 

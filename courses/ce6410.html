@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CE 6410 — Constitutive Modeling of Soil Mechanics | Mohaimenul Islam</title>
+<script>
+  (function() {
+    try {
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@1/dist/umd/lucide.min.js"></script>
+<link rel="stylesheet" href="../assets/msc/course-page.css">
+</head>
+<body>
+
+<nav aria-label="Course Navigation">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="../index.html#home" class="nav-logo">MI.</a>
+      <a href="../index.html#coursework" class="back-link">
+        <i data-lucide="arrow-left" style="width:15px;height:15px;"></i>
+        <span>Back to Portfolio</span>
+      </a>
+    </div>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch to light theme">
+      <i data-lucide="sun" id="theme-icon" style="width:16px;height:16px;"></i>
+      <span class="theme-label" id="theme-label">Light</span>
+    </button>
+  </div>
+  <div class="course-switcher">
+    <div class="course-switcher-inner" aria-label="Switch M.Sc. course">
+      <a href="ce6401.html" class="course-pill">CE 6401</a>
+      <a href="ce6403.html" class="course-pill">CE 6403</a>
+      <a href="ce6405.html" class="course-pill">CE 6405</a>
+      <a href="ce6409.html" class="course-pill">CE 6409</a>
+      <a href="ce6410.html" class="course-pill active" aria-current="page">CE 6410</a>
+      <a href="ce6411.html" class="course-pill">CE 6411</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="course-hero">
+    <div class="course-eyebrow">BUET M.Sc. in Civil Engineering &middot; Coursework</div>
+    <h1>CE 6410 — Constitutive Modeling of Soil Mechanics</h1>
+    <p class="course-overview-text">Covers continuum stress and strain tensors, invariants and octahedral stresses, Mohr&rsquo;s circle transformations, Tresca and von Mises (<em>J</em><sub>2</sub>) yield criteria, Prandtl-Reuss plastic flow rules, isotropic/kinematic hardening, and backward Euler return mapping with consistent tangent operators.</p>
+    <div class="course-meta-tags">
+      <span class="course-tag">Stress-Strain Tensors</span>
+      <span class="course-tag">J2 Plasticity</span>
+      <span class="course-tag">Hardening Rules</span>
+      <span class="course-tag">Return Mapping</span>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-block-title">
+      <i data-lucide="book-open"></i>
+      <span>Course Topics Covered</span>
+    </h2>
+    <div class="topic-grid">
+      <article class="topic-card">
+        <div class="topic-code">Module 01</div>
+        <h3 class="topic-name">Stress &amp; Strain Tensors</h3>
+        <p class="topic-desc">Principal stresses, tensor invariants (<em>I</em><sub>1</sub>, <em>J</em><sub>2</sub>, <em>J</em><sub>3</sub>), octahedral shear stress, Mohr&rsquo;s circle, and natural vs. conventional strain definitions.</p>
+      </article>
+      <article class="topic-card">
+        <div class="topic-code">Module 02</div>
+        <h3 class="topic-name">Yield Criteria</h3>
+        <p class="topic-desc">Elastic limits, Tresca maximum shear stress criterion, and von Mises (<em>J</em><sub>2</sub>) yield surface geometry in principal stress space.</p>
+      </article>
+      <article class="topic-card">
+        <div class="topic-code">Module 03</div>
+        <h3 class="topic-name">Plastic Flow &amp; Hardening</h3>
+        <p class="topic-desc">Prandtl-Reuss incremental stress-strain relations along with isotropic, kinematic, and combined hardening models.</p>
+      </article>
+      <article class="topic-card">
+        <div class="topic-code">Module 04</div>
+        <h3 class="topic-name">Return Mapping Formulation</h3>
+        <p class="topic-desc">Elastic trial state, plastic corrector via backward Euler return mapping, and consistent elastoplastic tangent operator equations.</p>
+      </article>
+    </div>
+
+    <div class="info-note">
+      <strong>Note on Coursework Materials:</strong> CE 6410 focused on analytical continuum mechanics derivations, lecture notes, and exam problem sets; no separate model snaps or project report PDFs are attached for this course.
+    </div>
+  </section>
+
+  <div class="course-pager">
+    <a href="ce6409.html" class="pager-link">
+      <i data-lucide="arrow-left" style="width:16px;height:16px;"></i>
+      <span>Prev: CE 6409 — Reinforced Earth</span>
+    </a>
+    <a href="ce6411.html" class="pager-link">
+      <span>Next: CE 6411 — Earthquake Engineering</span>
+      <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <strong>Mohaimenul Islam</strong> &mdash; BUET M.Sc. Coursework Archive
+</footer>
+
+<script src="../assets/msc/course-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CE 6403 — Foundation Analysis Methods | Mohaimenul Islam</title>
+<script>
+  (function() {
+    try {
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'light' || saved === 'dark') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/lucide@1/dist/umd/lucide.min.js"></script>
+<link rel="stylesheet" href="../assets/msc/course-page.css">
+</head>
+<body>
+
+<nav aria-label="Course Navigation">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="../index.html#home" class="nav-logo">MI.</a>
+      <a href="../index.html#coursework" class="back-link">
+        <i data-lucide="arrow-left" style="width:15px;height:15px;"></i>
+        <span>Back to Portfolio</span>
+      </a>
+    </div>
+    <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch to light theme">
+      <i data-lucide="sun" id="theme-icon" style="width:16px;height:16px;"></i>
+      <span class="theme-label" id="theme-label">Light</span>
+    </button>
+  </div>
+  <div class="course-switcher">
+    <div class="course-switcher-inner" aria-label="Switch M.Sc. course">
+      <a href="ce6401.html" class="course-pill">CE 6401</a>
+      <a href="ce6403.html" class="course-pill active" aria-current="page">CE 6403</a>
+      <a href="ce6405.html" class="course-pill">CE 6405</a>
+      <a href="ce6409.html" class="course-pill">CE 6409</a>
+      <a href="ce6410.html" class="course-pill">CE 6410</a>
+      <a href="ce6411.html" class="course-pill">CE 6411</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="course-hero">
+    <div class="course-eyebrow">BUET M.Sc. in Civil Engineering &middot; Coursework</div>
+    <h1>CE 6403 — Foundation Analysis Methods</h1>
+    <p class="course-overview-text">Examines elastic slabs on Winkler springs versus continuum half-spaces, soil-structure interaction for shallow footings and mat foundations (PLAXIS 3D, SAFE/ETABS), laterally loaded piles using <em>p-y</em> curves, negative skin friction, batter piles, uplift checks, and BNBC 2020 pile provisions.</p>
+    <div class="course-meta-tags">
+      <span class="course-tag">PLAXIS 3D Mat Analysis</span>
+      <span class="course-tag">Soil-Structure Interaction</span>
+      <span class="course-tag">Laterally Loaded Piles</span>
+      <span class="course-tag">Soil Replacement</span>
+      <span class="course-tag">BNBC 2020 Practice</span>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-block-title">
+      <i data-lucide="images"></i>
+      <span>Analysis &amp; Assignment Snaps (Click to Enlarge)</span>
+    </h2>
+    <div class="snap-grid">
+      <article class="snap-card">
+        <button type="button" class="snap-thumb" aria-label="Enlarge snap: 20-Story Mat Foundation Settlement Contours">
+          <img src="../assets/msc/snaps/snap-plaxis3d-mat-settlement.jpg" alt="PLAXIS 3D vertical settlement contours for a 20-story mat foundation in Bashundhara Dhaka showing 135.4 mm max settlement" loading="lazy">
+          <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
+        </button>
+        <div class="snap-body">
+          <div class="snap-meta">CE 6403 &middot; Analysis Snap &middot; PLAXIS 3D</div>
+          <h3 class="snap-title">20-Story Mat Foundation Settlement Contours</h3>
+          <p class="snap-caption">Bashundhara mat foundation 3D displacement contours from Assignment 4 (<em>&delta;</em><sub>max</sub> = 135.4 mm, angular distortion 1/519), leading to a piled-raft recommendation.</p>
+        </div>
+      </article>
+
+      <article class="snap-card">
+        <button type="button" class="snap-thumb" aria-label="Enlarge snap: 3D Finite Element Mesh &amp; Stratigraphy Model">
+          <img src="../assets/msc/snaps/snap-plaxis3d-mat-model.jpg" alt="PLAXIS 3D finite element mesh and soil stratigraphy model for 20-story mat foundation" loading="lazy">
+          <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
+        </button>
+        <div class="snap-body">
+          <div class="snap-meta">CE 6403 &middot; Analysis Snap &middot; PLAXIS 3D</div>
+          <h3 class="snap-title">3D Finite Element Mesh &amp; Stratigraphy Model</h3>
+          <p class="snap-caption">Full 3D soil-foundation continuum model from Assignment 4 representing layered Dhaka soil profiles and column load transfer.</p>
+        </div>
+      </article>
+
+      <article class="snap-card">
+        <button type="button" class="snap-thumb" aria-label="Enlarge snap: 2,000-Ton Drilling Pad Settlement &amp; Shear Check">
+          <img src="../assets/msc/snaps/assign-drilling-pad-calc.jpg" alt="CE 6403 Assignment 1 settlement and punching shear calculation sheet for a 5m x 8m drilling pad" loading="lazy">
+          <span class="snap-zoom-pill"><i data-lucide="zoom-in"></i> Zoom</span>
+        </button>
+        <div class="snap-body">
+          <div class="snap-meta assignment">CE 6403 &middot; Assignment Snap &middot; Assignment 1</div>
+          <h3 class="snap-title">2,000-Ton Drilling Pad Settlement &amp; Shear Check</h3>
+          <p class="snap-caption">Calculation sheet checking initial bearing failure (FS = 0.28) and redesign via 5 m granular replacement (50.8 mm settlement) with punching shear and rebar checks.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-block-title">
+      <i data-lucide="file-text"></i>
+      <span>Assignment Reports (Solo Submissions, PDF)</span>
+    </h2>
+    <div class="report-grid">
+      <article class="report-card">
+        <div class="report-top">
+          <span class="report-badge"><i data-lucide="file-text"></i> Assignment 1</span>
+          <span class="report-pages">6 pages &middot; PDF</span>
+        </div>
+        <h3 class="report-title">Geotechnical &amp; Structural Design Report: Drilling Pad</h3>
+        <p class="report-desc">Design of a 5.0 m &times; 8.0 m concrete drilling pad under 2,000-ton (19,620 kN) service load, addressing low untreated bearing capacity (FS = 0.28) via 5 m granular replacement, settlement estimate (50.8 mm), punching shear, and reinforcement detailing.</p>
+        <div class="report-actions">
+          <a href="../assets/msc/reports/CE6403_Drilling_Pad_Assignment1.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+            View PDF
+          </a>
+          <a href="../assets/msc/reports/CE6403_Drilling_Pad_Assignment1.pdf" download="CE6403_Drilling_Pad_Assignment1.pdf" class="btn btn-primary">
+            <i data-lucide="download" style="width:15px;height:15px;"></i>
+            Download PDF
+          </a>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div class="report-top">
+          <span class="report-badge"><i data-lucide="file-text"></i> Assignment 2</span>
+          <span class="report-pages">5 pages &middot; PDF</span>
+        </div>
+        <h3 class="report-title">Industrial Slab-on-Grade Undulation &amp; Repair Study</h3>
+        <p class="report-desc">Coursework assessment of cracking and uneven settlement in a factory floor slab subjected to 3 ton/m<sup>2</sup> (~30 kPa) warehouse loading, outlining probable subgrade causes and retrofitting schemes.</p>
+        <div class="report-actions">
+          <a href="../assets/msc/reports/CE6403_Factory_Slab_Failure_Assignment2.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+            View PDF
+          </a>
+          <a href="../assets/msc/reports/CE6403_Factory_Slab_Failure_Assignment2.pdf" download="CE6403_Factory_Slab_Failure_Assignment2.pdf" class="btn btn-primary">
+            <i data-lucide="download" style="width:15px;height:15px;"></i>
+            Download PDF
+          </a>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div class="report-top">
+          <span class="report-badge"><i data-lucide="file-text"></i> Assignment 3</span>
+          <span class="report-pages">9 pages &middot; PDF</span>
+        </div>
+        <h3 class="report-title">Mat Foundation Design — 20-Story Building, Lalbagh, Dhaka</h3>
+        <p class="report-desc">Bearing capacity verification (<em>q</em><sub>applied</sub> = 162.27 kPa &lt; <em>q</em><sub>allow</sub> = 473.4 kPa) and PLAXIS 3D settlement check (<em>&delta;</em><sub>max</sub> = 38.83 mm, angular distortion 1/2243) for a 104 ft &times; 166 ft building footprint.</p>
+        <div class="report-actions">
+          <a href="../assets/msc/reports/CE6403_Mat_Foundation_Design_Lalbagh.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+            View PDF
+          </a>
+          <a href="../assets/msc/reports/CE6403_Mat_Foundation_Design_Lalbagh.pdf" download="CE6403_Mat_Foundation_Design_Lalbagh.pdf" class="btn btn-primary">
+            <i data-lucide="download" style="width:15px;height:15px;"></i>
+            Download PDF
+          </a>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div class="report-top">
+          <span class="report-badge"><i data-lucide="file-text"></i> Assignment 4</span>
+          <span class="report-pages">10 pages &middot; PDF</span>
+        </div>
+        <h3 class="report-title">Mat Foundation Design — 20-Story Building, Bashundhara, Dhaka</h3>
+        <p class="report-desc">PLAXIS 3D soil-structure interaction check showing excessive mat settlement (<em>&delta;</em><sub>max</sub> = 135.4 mm &gt; 100 mm limit, angular distortion 1/519), concluding with a piled-raft foundation recommendation.</p>
+        <div class="report-actions">
+          <a href="../assets/msc/reports/CE6403_Mat_Foundation_Design_Bashundhara.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i data-lucide="external-link" style="width:15px;height:15px;"></i>
+            View PDF
+          </a>
+          <a href="../assets/msc/reports/CE6403_Mat_Foundation_Design_Bashundhara.pdf" download="CE6403_Mat_Foundation_Design_Bashundhara.pdf" class="btn btn-primary">
+            <i data-lucide="download" style="width:15px;height:15px;"></i>
+            Download PDF
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="course-pager">
+    <a href="ce6401.html" class="pager-link">
+      <i data-lucide="arrow-left" style="width:16px;height:16px;"></i>
+      <span>Prev: CE 6401 — Soil Mechanics I</span>
+    </a>
+    <a href="ce6405.html" class="pager-link">
+      <span>Next: CE 6405 — Earth Dams &amp; Stability of Slopes</span>
+      <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+    </a>
+  </div>
+</main>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+  <div class="lightbox-dialog">
+    <div class="lightbox-topbar">
+      <span id="lightbox-meta" class="lightbox-meta"></span>
+      <span id="lightbox-count" class="lightbox-count"></span>
+      <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close image preview">
+        <i data-lucide="x" style="width:18px;height:18px;"></i>
+      </button>
+    </div>
+    <div class="lightbox-stage">
+      <img id="lightbox-img" alt="">
+    </div>
+    <div class="lightbox-footer">
+      <div class="lightbox-caption-wrap">
+        <h3 id="lightbox-title" class="lightbox-title"></h3>
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+      </div>
+      <div class="lightbox-nav">
+        <button type="button" id="lightbox-prev" class="lightbox-nav-btn" aria-label="Previous snap">
+          <i data-lucide="chevron-left" style="width:16px;height:16px;"></i>
+          Prev
+        </button>
+        <button type="button" id="lightbox-next" class="lightbox-nav-btn" aria-label="Next snap">
+          Next
+          <i data-lucide="chevron-right" style="width:16px;height:16px;"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <strong>Mohaimenul Islam</strong> &mdash; BUET M.Sc. Coursework Archive
+</footer>
+
+<script src="../assets/msc/course-page.js"></script>
+</body>
+</html>
