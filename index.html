@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio of Mohaimenul Islam — Geotechnical & Tunnel Engineer with 6+ years of experience delivering feasibility studies, FEM tunnel design, slope stability, foundation design, and site investigations for USD 8B+ infrastructure projects.">
+<meta name="description" content="Portfolio of Mohaimenul Islam — Geotechnical & Tunnel Engineer with 6+ years of experience delivering feasibility studies, detailed designs, FEM tunnel modeling, and geotechnical investigations for infrastructure projects valued at over USD $8B.">
 <title>Mohaimenul Islam — Geotechnical &amp; Tunnel Engineer</title>
 <script>
   (function() {
@@ -19,1640 +19,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/lucide@1/dist/umd/lucide.min.js"></script>
-<style>
-  :root,
-  html[data-theme="dark"] {
-    --bg: #18181c;
-    --bg-alt: #1f1f24;
-    --card: #24242a;
-    --card-hover: #2b2b33;
-    --text: #ece9e2;
-    --muted: #a19e96;
-    --accent: #d47a4c;
-    --accent-hover: #e28d62;
-    --accent-soft: rgba(212, 122, 76, 0.14);
-    --accent2: #72a9bd;
-    --accent2-soft: rgba(114, 169, 189, 0.14);
-    --border: rgba(236, 233, 226, 0.11);
-    --border-strong: rgba(236, 233, 226, 0.22);
-    --nav-bg: rgba(24, 24, 28, 0.86);
-    --input-bg: #18181c;
-    --btn-ink: #18181c;
-    --shadow: 0 16px 40px rgba(0, 0, 0, 0.32);
-    --success: #5cb88a;
-    --success-soft: rgba(92, 184, 138, 0.14);
-  }
-
-  html[data-theme="light"] {
-    --bg: #f7f6f2;
-    --bg-alt: #eeece5;
-    --card: #ffffff;
-    --card-hover: #fcfbf8;
-    --text: #1b1d22;
-    --muted: #565a64;
-    --accent: #b8582c;
-    --accent-hover: #9f4921;
-    --accent-soft: rgba(184, 88, 44, 0.10);
-    --accent2: #2b6a82;
-    --accent2-soft: rgba(43, 106, 130, 0.10);
-    --border: rgba(27, 29, 34, 0.11);
-    --border-strong: rgba(27, 29, 34, 0.22);
-    --nav-bg: rgba(247, 246, 242, 0.90);
-    --input-bg: #f7f6f2;
-    --btn-ink: #ffffff;
-    --shadow: 0 14px 36px rgba(20, 24, 32, 0.08);
-    --success: #1f7a4d;
-    --success-soft: rgba(31, 122, 77, 0.11);
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 78px;
-  }
-
-  body {
-    font-family: 'Source Sans 3', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.65;
-    overflow-x: hidden;
-    transition: background-color 0.25s ease, color 0.25s ease;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
-
-  a { color: inherit; text-decoration: none; }
-
-  button { font-family: inherit; }
-
-  :focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-  }
-
-  /* Navigation */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background: var(--nav-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border);
-    transition: background-color 0.25s ease, border-color 0.25s ease;
-  }
-
-  .nav-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.85rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .nav-logo {
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: var(--accent);
-    letter-spacing: 0.02em;
-    flex-shrink: 0;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 1.45rem;
-    list-style: none;
-    align-items: center;
-  }
-
-  .nav-links a {
-    font-size: 0.94rem;
-    color: var(--muted);
-    transition: color 0.2s;
-    font-weight: 600;
-    position: relative;
-    padding: 0.25rem 0;
-  }
-
-  .nav-links a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -2px;
-    height: 2px;
-    background: var(--accent);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.2s ease;
-  }
-
-  .nav-links a:hover,
-  .nav-links a.active {
-    color: var(--accent);
-  }
-
-  .nav-links a.active::after {
-    transform: scaleX(1);
-  }
-
-  .nav-controls {
-    display: flex;
-    align-items: center;
-    gap: 0.65rem;
-    flex-shrink: 0;
-  }
-
-  .icon-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.45rem;
-    height: 38px;
-    padding: 0 0.85rem;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: var(--card);
-    color: var(--text);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-
-  .icon-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  .nav-cv-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    height: 38px;
-    padding: 0 0.9rem;
-    border-radius: 8px;
-    background: var(--accent-soft);
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    transition: all 0.2s ease;
-  }
-
-  .nav-cv-link:hover {
-    background: var(--accent);
-    color: var(--btn-ink);
-  }
-
-  .mobile-menu-btn {
-    display: none;
-    width: 38px;
-    padding: 0;
-  }
-
-  .mobile-drawer {
-    display: none;
-    border-top: 1px solid var(--border);
-    background: var(--card);
-    padding: 1rem 1.5rem 1.25rem;
-  }
-
-  .mobile-drawer.open {
-    display: block;
-  }
-
-  .mobile-drawer-links {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    margin-bottom: 1rem;
-  }
-
-  .mobile-drawer-links a {
-    display: block;
-    padding: 0.65rem 0.75rem;
-    border-radius: 8px;
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
-    color: var(--text);
-    transition: background-color 0.2s, color 0.2s;
-  }
-
-  .mobile-drawer-links a:hover,
-  .mobile-drawer-links a.active {
-    background: var(--accent-soft);
-    color: var(--accent);
-  }
-
-  .mobile-drawer-actions {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--border);
-  }
-
-  @media (max-width: 980px) {
-    .nav-links,
-    .nav-cv-link {
-      display: none;
-    }
-
-    .mobile-menu-btn {
-      display: inline-flex;
-    }
-
-    .theme-label {
-      display: none;
-    }
-
-    .theme-btn {
-      width: 38px;
-      padding: 0;
-    }
-  }
-
-  /* Hero */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 7.5rem 1.5rem 4.5rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -18%;
-    right: -10%;
-    width: 580px;
-    height: 580px;
-    background: radial-gradient(circle, var(--accent-soft) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-  }
-
-  .hero::after {
-    content: '';
-    position: absolute;
-    bottom: -12%;
-    left: -6%;
-    width: 420px;
-    height: 420px;
-    background: radial-gradient(circle, var(--accent2-soft) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-  }
-
-  .grid-bg {
-    background-image:
-      linear-gradient(var(--border) 1px, transparent 1px),
-      linear-gradient(90deg, var(--border) 1px, transparent 1px);
-    background-size: 48px 48px;
-    opacity: 0.35;
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-  }
-
-  .hero-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 4rem;
-    align-items: center;
-  }
-
-  .hero-eyebrow {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    color: var(--accent);
-    margin-bottom: 1.15rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-weight: 600;
-  }
-
-  .hero-eyebrow::before {
-    content: '';
-    width: 36px;
-    height: 2px;
-    background: var(--accent);
-  }
-
-  .hero h1 {
-    font-size: clamp(2.4rem, 5.5vw, 4.3rem);
-    font-weight: 700;
-    line-height: 1.08;
-    margin-bottom: 0.8rem;
-  }
-
-  .hero h1 span {
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .hero-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: clamp(1.05rem, 2vw, 1.28rem);
-    color: var(--muted);
-    margin-bottom: 1.35rem;
-    font-weight: 500;
-  }
-
-  .hero-desc {
-    font-size: 1.08rem;
-    color: var(--muted);
-    max-width: 630px;
-    margin-bottom: 2rem;
-    line-height: 1.72;
-  }
-
-  .hero-actions {
-    display: flex;
-    gap: 0.85rem;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-  }
-
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.82rem 1.5rem;
-    border-radius: 8px;
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
-    font-size: 0.94rem;
-    transition: all 0.22s ease;
-    cursor: pointer;
-    border: 1px solid transparent;
-  }
-
-  .btn-primary {
-    background: var(--accent);
-    color: var(--btn-ink);
-  }
-
-  .btn-primary:hover {
-    background: var(--accent-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(196, 112, 70, 0.28);
-  }
-
-  .btn-accent-outline {
-    background: var(--accent-soft);
-    color: var(--accent);
-    border-color: var(--accent);
-  }
-
-  .btn-accent-outline:hover {
-    background: var(--accent);
-    color: var(--btn-ink);
-    transform: translateY(-2px);
-  }
-
-  .btn-secondary {
-    background: var(--card);
-    color: var(--text);
-    border-color: var(--border);
-  }
-
-  .btn-secondary:hover {
-    border-color: var(--accent2);
-    color: var(--accent2);
-    transform: translateY(-2px);
-  }
-
-  .hero-contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem 1.5rem;
-  }
-
-  .contact-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    color: var(--muted);
-    font-size: 0.94rem;
-    transition: color 0.2s;
-  }
-
-  .contact-item:hover { color: var(--accent); }
-
-  .contact-item svg {
-    color: var(--accent);
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-  }
-
-  /* Profile Portrait */
-  .avatar-wrap {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
-  }
-
-  .avatar-frame {
-    position: relative;
-    width: 268px;
-    height: 268px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .avatar-ring {
-    position: absolute;
-    inset: -12px;
-    border-radius: 50%;
-    border: 2px dashed var(--accent);
-    opacity: 0.48;
-    animation: spin 36s linear infinite;
-    pointer-events: none;
-  }
-
-  .avatar {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    padding: 5px;
-    background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
-    box-shadow: var(--shadow);
-    overflow: hidden;
-  }
-
-  .avatar-photo {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center 15%;
-    display: block;
-    background: #ffffff;
-  }
-
-  .avatar-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    padding: 0.4rem 0.9rem;
-    border-radius: 999px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--text);
-    box-shadow: var(--shadow);
-  }
-
-  .avatar-badge svg {
-    width: 15px;
-    height: 15px;
-    color: var(--accent2);
-  }
-
-  @keyframes spin {
-    to { transform: rotate(360deg); }
-  }
-
-  @media (max-width: 900px) {
-    .hero {
-      min-height: auto;
-      align-items: flex-start;
-      padding-top: 6.5rem;
-      padding-bottom: 3.5rem;
-    }
-
-    .hero-inner {
-      grid-template-columns: 1fr;
-      gap: 2.25rem;
-      text-align: left;
-    }
-
-    .avatar-wrap {
-      order: -1;
-      align-items: flex-start;
-    }
-
-    .avatar-frame {
-      width: 168px;
-      height: 168px;
-    }
-  }
-
-  /* Sections */
-  section {
-    padding: 5.25rem 1.5rem;
-    position: relative;
-  }
-
-  .section-alt {
-    background: var(--bg-alt);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .section-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .section-header {
-    margin-bottom: 2.85rem;
-  }
-
-  .section-label {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: var(--accent);
-    margin-bottom: 0.65rem;
-    font-weight: 600;
-  }
-
-  .section-title {
-    font-size: clamp(1.85rem, 3.8vw, 2.55rem);
-    font-weight: 700;
-    margin-bottom: 0.65rem;
-  }
-
-  .section-subtitle {
-    color: var(--muted);
-    font-size: 1.05rem;
-    max-width: 650px;
-  }
-
-  /* About */
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 3rem;
-    align-items: start;
-  }
-
-  @media (max-width: 900px) {
-    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-  }
-
-  .about-text p {
-    color: var(--muted);
-    font-size: 1.05rem;
-    line-height: 1.8;
-    margin-bottom: 1.25rem;
-  }
-
-  .about-text p:last-child { margin-bottom: 0; }
-
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-  }
-
-  .stat-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.45rem;
-    transition: all 0.25s ease;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: var(--accent);
-  }
-
-  .stat-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--accent);
-    box-shadow: var(--shadow);
-  }
-
-  .stat-number {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--accent);
-    line-height: 1.1;
-    margin-bottom: 0.35rem;
-  }
-
-  .stat-label {
-    color: var(--muted);
-    font-size: 0.92rem;
-    font-weight: 500;
-  }
-
-  /* Core Competencies */
-  .comp-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 1.35rem;
-  }
-
-  .comp-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: all 0.25s ease;
-  }
-
-  .comp-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
-  }
-
-  .comp-head {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.85rem;
-  }
-
-  .comp-icon {
-    width: 38px;
-    height: 38px;
-    border-radius: 9px;
-    background: var(--accent-soft);
-    color: var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  .comp-icon svg { width: 19px; height: 19px; }
-
-  .comp-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.03rem;
-    font-weight: 600;
-  }
-
-  .comp-desc {
-    color: var(--muted);
-    font-size: 0.93rem;
-    line-height: 1.62;
-  }
-
-  /* Education Timeline */
-  .timeline {
-    position: relative;
-    padding-left: 2rem;
-  }
-
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 8px;
-    top: 6px;
-    bottom: 6px;
-    width: 2px;
-    background: var(--border-strong);
-  }
-
-  .timeline-item {
-    position: relative;
-    padding-bottom: 2.25rem;
-  }
-
-  .timeline-item:last-child { padding-bottom: 0; }
-
-  .timeline-dot {
-    position: absolute;
-    left: -2rem;
-    top: 0.3rem;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: var(--accent);
-    border: 3px solid var(--bg);
-    box-shadow: 0 0 0 3px var(--accent-soft);
-  }
-
-  .timeline-year {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.86rem;
-    color: var(--accent2);
-    font-weight: 600;
-    margin-bottom: 0.35rem;
-  }
-
-  .timeline-degree {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-    font-family: 'Chakra Petch', sans-serif;
-  }
-
-  .timeline-school {
-    color: var(--muted);
-    margin-bottom: 0.65rem;
-  }
-
-  .timeline-grade {
-    display: inline-block;
-    padding: 0.24rem 0.75rem;
-    background: var(--accent-soft);
-    border: 1px solid var(--accent);
-    border-radius: 6px;
-    font-size: 0.84rem;
-    color: var(--text);
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
-  }
-
-  .thesis-box {
-    margin-top: 0.9rem;
-    padding: 0.9rem 1.1rem;
-    border-radius: 10px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--accent2);
-    max-width: 780px;
-  }
-
-  .thesis-label {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.78rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: var(--accent2);
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-  }
-
-  .thesis-text {
-    color: var(--text);
-    font-size: 0.95rem;
-    line-height: 1.55;
-  }
-
-  /* Experience & Project Filter */
-  .filter-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-bottom: 2rem;
-  }
-
-  .filter-btn {
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    background: var(--card);
-    color: var(--muted);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-
-  .filter-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  .filter-btn.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--btn-ink);
-  }
-
-  .exp-item {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    transition: border-color 0.25s ease, box-shadow 0.25s ease;
-  }
-
-  .exp-item:last-child { margin-bottom: 0; }
-
-  .exp-item:hover {
-    border-color: var(--border-strong);
-    box-shadow: var(--shadow);
-  }
-
-  .exp-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.25rem;
-    border-bottom: 1px solid var(--border);
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .exp-company {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: var(--accent);
-  }
-
-  .exp-company-sub {
-    color: var(--muted);
-    font-size: 0.92rem;
-    margin-top: 0.2rem;
-  }
-
-  .exp-meta-right {
-    text-align: right;
-  }
-
-  @media (max-width: 640px) {
-    .exp-item { padding: 1.35rem; }
-    .exp-meta-right { text-align: left; }
-  }
-
-  .exp-role {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--accent2);
-    margin-bottom: 0.2rem;
-  }
-
-  .exp-date {
-    color: var(--muted);
-    font-size: 0.9rem;
-    font-family: 'Chakra Petch', sans-serif;
-  }
-
-  .role-divider {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    padding: 0.32rem 0.85rem;
-    border-radius: 6px;
-    background: var(--accent2-soft);
-    border: 1px solid var(--border);
-    color: var(--accent2);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.84rem;
-    font-weight: 600;
-    margin-bottom: 1.1rem;
-  }
-
-  .role-divider.is-hidden {
-    display: none;
-  }
-
-  .project-block {
-    border-top: 1px solid var(--border);
-    padding-top: 1.45rem;
-    margin-top: 1.45rem;
-  }
-
-  .project-block.first-visible {
-    border-top: none;
-    padding-top: 0;
-    margin-top: 0;
-  }
-
-  .project-block.is-hidden,
-  .exp-item.is-hidden {
-    display: none;
-  }
-
-  .project-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.08rem;
-    font-weight: 600;
-    margin-bottom: 0.55rem;
-    display: flex;
-    align-items: center;
-    gap: 0.55rem;
-  }
-
-  .project-title svg {
-    color: var(--accent);
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-  }
-
-  .project-meta {
-    display: flex;
-    gap: 0.45rem 1.2rem;
-    flex-wrap: wrap;
-    margin-bottom: 0.9rem;
-    font-size: 0.86rem;
-    color: var(--muted);
-  }
-
-  .project-meta span {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-  }
-
-  .project-meta svg {
-    width: 14px;
-    height: 14px;
-    color: var(--accent2);
-    flex-shrink: 0;
-  }
-
-  .project-block ul {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  .project-block li {
-    position: relative;
-    padding-left: 1.35rem;
-    margin-bottom: 0.5rem;
-    color: var(--muted);
-    font-size: 0.96rem;
-    line-height: 1.62;
-  }
-
-  .project-block li:last-child { margin-bottom: 0; }
-
-  .project-block li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.58rem;
-    width: 7px;
-    height: 7px;
-    background: var(--accent);
-    border-radius: 2px;
-    transform: rotate(45deg);
-  }
-
-  /* Skills */
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.35rem;
-  }
-
-  .skill-category {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.55rem;
-    transition: all 0.25s ease;
-  }
-
-  .skill-category:hover {
-    border-color: var(--accent2);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
-  }
-
-  .skill-cat-header {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1.1rem;
-    padding-bottom: 0.9rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .skill-cat-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--accent-soft);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent);
-    flex-shrink: 0;
-  }
-
-  .skill-cat-icon svg { width: 20px; height: 20px; }
-
-  .skill-cat-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.03rem;
-    font-weight: 600;
-  }
-
-  .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .skill-tag {
-    padding: 0.36rem 0.78rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-size: 0.84rem;
-    color: var(--text);
-    transition: all 0.2s;
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 500;
-  }
-
-  .skill-tag:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    background: var(--accent-soft);
-  }
-
-  /* Languages & Memberships */
-  .sub-grid-2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.35rem;
-  }
-
-  .lang-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
-  }
-
-  .lang-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.75rem;
-  }
-
-  .lang-name {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.08rem;
-    font-weight: 600;
-  }
-
-  .lang-level {
-    font-size: 0.84rem;
-    color: var(--muted);
-  }
-
-  .lang-bar {
-    height: 7px;
-    background: var(--bg);
-    border-radius: 4px;
-    overflow: hidden;
-    border: 1px solid var(--border);
-  }
-
-  .lang-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--accent), var(--accent2));
-    border-radius: 4px;
-  }
-
-  .membership-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.6rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .membership-icon {
-    width: 46px;
-    height: 46px;
-    background: var(--accent2-soft);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--accent2);
-    flex-shrink: 0;
-  }
-
-  .membership-icon svg { width: 22px; height: 22px; }
-
-  .membership-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-  }
-
-  .membership-id {
-    color: var(--muted);
-    font-size: 0.92rem;
-  }
-
-  /* References */
-  .ref-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-  }
-
-  .ref-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.65rem;
-    transition: all 0.25s ease;
-  }
-
-  .ref-card:hover {
-    border-color: var(--accent2);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow);
-  }
-
-  .ref-name {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.12rem;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 0.25rem;
-  }
-
-  .ref-title {
-    color: var(--muted);
-    font-size: 0.92rem;
-    margin-bottom: 0.85rem;
-  }
-
-  .ref-contact {
-    color: var(--text);
-    font-size: 0.92rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: color 0.2s;
-  }
-
-  .ref-contact:hover { color: var(--accent2); }
-
-  .ref-contact svg {
-    color: var(--accent2);
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-  }
-
-  /* Contact Section */
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 0.95fr 1.05fr;
-    gap: 2.25rem;
-    align-items: start;
-  }
-
-  @media (max-width: 900px) {
-    .contact-grid { grid-template-columns: 1fr; }
-  }
-
-  .contact-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .contact-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.25rem 1.35rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-    transition: border-color 0.2s ease;
-  }
-
-  .contact-card:hover {
-    border-color: var(--accent2);
-  }
-
-  .contact-card-main {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.95rem;
-    min-width: 0;
-  }
-
-  .contact-card-icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 10px;
-    background: var(--accent-soft);
-    color: var(--accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-
-  .contact-card-icon svg { width: 20px; height: 20px; }
-
-  .contact-card-label {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    margin-bottom: 0.2rem;
-  }
-
-  .contact-card-value {
-    font-weight: 600;
-    font-size: 1rem;
-    word-break: break-word;
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-
-  .contact-card-value a:hover {
-    color: var(--accent);
-  }
-
-  .copy-btn {
-    padding: 0.42rem 0.7rem;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    color: var(--muted);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.78rem;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    flex-shrink: 0;
-    transition: all 0.2s ease;
-  }
-
-  .copy-btn svg { width: 14px; height: 14px; }
-
-  .copy-btn:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-
-  .copy-btn.copied {
-    border-color: var(--success);
-    color: var(--success);
-    background: var(--success-soft);
-  }
-
-  .cv-card {
-    background: linear-gradient(135deg, var(--accent-soft), var(--accent2-soft));
-    border: 1px solid var(--border-strong);
-    border-radius: 12px;
-    padding: 1.35rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-  }
-
-  .cv-card-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-  }
-
-  .cv-card-desc {
-    color: var(--muted);
-    font-size: 0.92rem;
-  }
-
-  .cv-card-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
-  }
-
-  .contact-form-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 1.85rem;
-    box-shadow: var(--shadow);
-  }
-
-  .contact-form-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.35rem;
-  }
-
-  .contact-form-sub {
-    color: var(--muted);
-    font-size: 0.93rem;
-    margin-bottom: 1.4rem;
-  }
-
-  .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  @media (max-width: 580px) {
-    .form-row { grid-template-columns: 1fr; }
-    .contact-form-card { padding: 1.35rem; }
-  }
-
-  .form-group {
-    margin-bottom: 1rem;
-  }
-
-  .form-group label {
-    display: block;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.84rem;
-    font-weight: 600;
-    margin-bottom: 0.4rem;
-    color: var(--text);
-  }
-
-  .form-control {
-    width: 100%;
-    padding: 0.72rem 0.9rem;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    background: var(--input-bg);
-    color: var(--text);
-    font-family: inherit;
-    font-size: 0.96rem;
-    transition: border-color 0.2s ease;
-  }
-
-  .form-control:focus {
-    outline: none;
-    border-color: var(--accent);
-  }
-
-  textarea.form-control {
-    min-height: 120px;
-    resize: vertical;
-  }
-
-  .form-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-top: 0.4rem;
-  }
-
-  .form-status {
-    margin-top: 1rem;
-    padding: 0.75rem 0.95rem;
-    border-radius: 8px;
-    font-size: 0.92rem;
-    display: none;
-  }
-
-  .form-status.show {
-    display: block;
-    background: var(--success-soft);
-    border: 1px solid var(--success);
-    color: var(--success);
-  }
-
-  .form-status.error {
-    display: block;
-    background: var(--accent-soft);
-    border: 1px solid var(--accent);
-    color: var(--accent);
-  }
-
-  /* M.Sc. Coursework Cards */
-  .course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    gap: 1.35rem;
-  }
-
-  .course-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
-    cursor: pointer;
-  }
-
-  .course-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow);
-  }
-
-  .course-head {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.85rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .course-code {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.15rem;
-  }
-
-  .course-title {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 1.06rem;
-    font-weight: 600;
-    line-height: 1.3;
-  }
-
-  .course-desc {
-    color: var(--muted);
-    font-size: 0.93rem;
-    line-height: 1.62;
-    margin-bottom: 1rem;
-    flex: 1;
-  }
-
-  .course-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.42rem;
-    margin-bottom: 1.05rem;
-  }
-
-  .course-tag {
-    font-size: 0.78rem;
-    padding: 0.24rem 0.6rem;
-    border-radius: 6px;
-    background: var(--accent2-soft);
-    border: 1px solid var(--border);
-    color: var(--text);
-    font-weight: 500;
-  }
-
-  .course-card-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    padding-top: 0.85rem;
-    border-top: 1px solid var(--border);
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.82rem;
-  }
-
-  .course-meta-count {
-    color: var(--muted);
-    font-weight: 500;
-  }
-
-  .course-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    color: var(--accent);
-    font-weight: 600;
-  }
-
-  .course-cta svg {
-    width: 15px;
-    height: 15px;
-    transition: transform 0.2s ease;
-  }
-
-  .course-card:hover .course-cta svg {
-    transform: translateX(3px);
-  }
-
-  @media (max-width: 600px) {
-    .course-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* Footer */
-  footer {
-    background: var(--card);
-    border-top: 1px solid var(--border);
-    padding: 2.75rem 1.5rem;
-  }
-
-  .footer-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 0.9rem;
-    margin-bottom: 1.35rem;
-    flex-wrap: wrap;
-  }
-
-  .social-link {
-    width: 42px;
-    height: 42px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--muted);
-    transition: all 0.22s ease;
-  }
-
-  .social-link svg { width: 18px; height: 18px; }
-
-  .social-link:hover {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: var(--btn-ink);
-    transform: translateY(-2px);
-  }
-
-  .footer-text {
-    color: var(--muted);
-    font-size: 0.92rem;
-  }
-
-  .footer-text strong {
-    color: var(--accent);
-    font-family: 'Chakra Petch', sans-serif;
-  }
-
-  /* Scroll reveal */
-  html.js-ready .reveal {
-    opacity: 0;
-    transform: translateY(22px);
-    transition: opacity 0.55s ease, transform 0.55s ease;
-  }
-
-  html.js-ready .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .avatar-ring { animation: none; }
-    html.js-ready .reveal { opacity: 1; transform: none; transition: none; }
-  }
-</style>
+<link rel="stylesheet" href="assets/portfolio/portfolio.css">
 </head>
 <body>
+
+<div id="scroll-progress" aria-hidden="true"></div>
 
 <!-- Navigation -->
 <nav aria-label="Primary Navigation">
@@ -1671,18 +42,24 @@
     </ul>
 
     <div class="nav-controls">
-      <a href="CV-Mohaimenul_Islam.pdf" download="CV-Mohaimenul_Islam.pdf" class="nav-cv-link">
+      <button type="button" id="cmd-btn" class="cmd-btn" aria-label="Open Command Palette">
+        <i data-lucide="search" style="width:15px;height:15px;"></i>
+        <span class="cmd-label">Search</span>
+        <span class="cmd-kbd">Ctrl+K</span>
+      </button>
+
+      <a href="CV-Mohaimenul_Islam.pdf" download="CV-Mohaimenul_Islam.pdf" class="icon-btn" title="Download CV PDF">
         <i data-lucide="download" style="width:15px;height:15px;"></i>
         <span>CV</span>
       </a>
 
-      <button type="button" id="theme-toggle" class="icon-btn theme-btn" aria-label="Switch to light theme" title="Toggle Light / Dark Theme">
-        <i data-lucide="sun" id="theme-icon" style="width:17px;height:17px;"></i>
+      <button type="button" id="theme-toggle" class="icon-btn" aria-label="Switch to light theme">
+        <i data-lucide="sun" id="theme-icon" style="width:16px;height:16px;"></i>
         <span class="theme-label" id="theme-label">Light</span>
       </button>
 
       <button type="button" id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-        <i data-lucide="menu" id="mobile-menu-icon" style="width:19px;height:19px;"></i>
+        <i data-lucide="menu" id="mobile-menu-icon" style="width:18px;height:18px;"></i>
       </button>
     </div>
   </div>
@@ -1693,18 +70,18 @@
       <li><a href="#about">01 — About</a></li>
       <li><a href="#competencies">02 — Core Competencies</a></li>
       <li><a href="#education">03 — Education</a></li>
-      <li><a href="#coursework">04 — M.Sc. Coursework</a></li>
-      <li><a href="#experience">05 — Experience</a></li>
+      <li><a href="#coursework">04 — BUET M.Sc. Coursework</a></li>
+      <li><a href="#experience">05 — Experience Explorer</a></li>
       <li><a href="#skills">06 — Software &amp; Membership</a></li>
       <li><a href="#references">07 — References</a></li>
       <li><a href="#contact">08 — Contact</a></li>
     </ul>
     <div class="mobile-drawer-actions">
-      <a href="CV-Mohaimenul_Islam.pdf" download="CV-Mohaimenul_Islam.pdf" class="btn btn-primary" style="flex:1; padding:0.65rem 1rem;">
+      <a href="CV-Mohaimenul_Islam.pdf" download="CV-Mohaimenul_Islam.pdf" class="btn btn-primary" style="flex:1;padding:0.6rem 1rem;">
         <i data-lucide="download" style="width:16px;height:16px;"></i>
         Download CV (PDF)
       </a>
-      <a href="CV-Mohaimenul_Islam.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.65rem 1rem;">
+      <a href="CV-Mohaimenul_Islam.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.6rem 1rem;">
         <i data-lucide="external-link" style="width:16px;height:16px;"></i>
         Preview
       </a>
@@ -1713,14 +90,26 @@
 </nav>
 
 <main>
-  <!-- Hero -->
+  <!-- Hero with Live Interactive FEM Mesh -->
   <section class="hero" id="home">
-    <div class="grid-bg"></div>
+    <canvas id="fem-canvas" aria-hidden="true"></canvas>
+
     <div class="hero-inner">
       <div>
-        <div class="hero-eyebrow">Geotechnical &amp; Tunnel Portfolio</div>
+        <div class="hero-status-bar">
+          <span class="status-dot"></span>
+          <span>Geotechnical &amp; Tunnel Engineering &middot; Dhaka, Bangladesh</span>
+        </div>
+
         <h1>Mohaimenul <span>Islam</span></h1>
-        <div class="hero-title">Geotechnical &amp; Tunnel Engineer</div>
+        <div class="hero-role-line">
+          <span>Geotechnical &amp; Tunnel Engineer</span>
+          <span>&middot;</span>
+          <span>PLAXIS 2D/3D &amp; RS2</span>
+          <span>&middot;</span>
+          <span>IEB M-51075</span>
+        </div>
+
         <p class="hero-desc">
           6+ years of progressive experience delivering feasibility studies, detailed designs, FEM tunnel modeling,
           and geotechnical investigations for infrastructure projects valued at over USD $8B across UAE, Philippines, and Bangladesh.
@@ -1728,59 +117,95 @@
 
         <div class="hero-actions">
           <a href="#experience" class="btn btn-primary">
-            <i data-lucide="briefcase" style="width:18px;height:18px;"></i>
-            View Experience
+            <i data-lucide="briefcase" style="width:17px;height:17px;"></i>
+            Explore 11 Projects
           </a>
-          <a href="CV-Mohaimenul_Islam.pdf" download="CV-Mohaimenul_Islam.pdf" class="btn btn-accent-outline">
-            <i data-lucide="download" style="width:18px;height:18px;"></i>
+          <a href="#coursework" class="btn btn-secondary">
+            <i data-lucide="graduation-cap" style="width:17px;height:17px;"></i>
+            M.Sc. Coursework
+          </a>
+          <a href="CV-Mohaimenul_Islam.pdf" download="CV-Mohaimenul_Islam.pdf" class="btn btn-secondary">
+            <i data-lucide="download" style="width:17px;height:17px;"></i>
             Download CV
-          </a>
-          <a href="#contact" class="btn btn-secondary">
-            <i data-lucide="mail" style="width:18px;height:18px;"></i>
-            Get in Touch
           </a>
         </div>
 
-        <div class="hero-contact">
-          <span class="contact-item">
-            <i data-lucide="map-pin"></i>
-            Dhaka, Bangladesh
+        <div class="mesh-toolbar" role="group" aria-label="Interactive background mesh controls">
+          <span class="mesh-toolbar-label">
+            <i data-lucide="cpu" style="width:13px;height:13px;"></i>
+            Live FEM Mesh:
           </span>
-          <a href="mailto:mohaimenul.geo@gmail.com" class="contact-item">
-            <i data-lucide="mail"></i>
-            mohaimenul.geo@gmail.com
-          </a>
-          <a href="tel:+8801630457074" class="contact-item">
-            <i data-lucide="phone"></i>
-            +880 1630 457 074
-          </a>
+          <button type="button" class="mesh-mode-btn active" data-mesh-mode="stress">Stress Contours</button>
+          <button type="button" class="mesh-mode-btn" data-mesh-mode="vectors">Displacement Vectors</button>
+          <button type="button" class="mesh-mode-btn" data-mesh-mode="pause">Pause</button>
         </div>
       </div>
 
-      <div class="avatar-wrap">
-        <div class="avatar-frame">
-          <div class="avatar-ring"></div>
-          <div class="avatar">
-            <img src="me.jpg" alt="Portrait of Mohaimenul Islam" class="avatar-photo" width="300" height="300">
+      <div class="hero-visual">
+        <div class="avatar-card tilt-card">
+          <div class="avatar-frame">
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring-2"></div>
+            <div class="avatar">
+              <img src="me.jpg" alt="Portrait of Mohaimenul Islam" class="avatar-photo" width="240" height="240">
+            </div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:1.05rem;">Mohaimenul Islam</div>
+            <div style="font-size:0.84rem;color:var(--muted);">ACE Consultants Ltd. (SMEC Subsidiary)</div>
+          </div>
+          <div class="avatar-telemetry">
+            <div class="telemetry-item">
+              <div class="telemetry-val">M-51075</div>
+              <div class="telemetry-lbl">IEB Member</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-val">BUET M.Sc.</div>
+              <div class="telemetry-lbl">Geotechnical</div>
+            </div>
           </div>
         </div>
-        <div class="avatar-badge">
-          <i data-lucide="award"></i>
-          IEB Member &middot; M-51075
-        </div>
+      </div>
+    </div>
+
+    <!-- Animated KPI Counter Strip -->
+    <div class="kpi-strip">
+      <div class="kpi-card tilt-card">
+        <div class="kpi-number" data-target="6" data-suffix="+">6+</div>
+        <div class="kpi-label">Years Experience</div>
+      </div>
+      <div class="kpi-card tilt-card">
+        <div class="kpi-number" data-target="8" data-prefix="$" data-suffix="B+">$8B+</div>
+        <div class="kpi-label">Infrastructure Value</div>
+      </div>
+      <div class="kpi-card tilt-card">
+        <div class="kpi-number" data-target="70" data-suffix="m">70m</div>
+        <div class="kpi-label">Max Shaft / Tunnel Depth</div>
+      </div>
+      <div class="kpi-card tilt-card">
+        <div class="kpi-number" data-target="726" data-suffix="">726</div>
+        <div class="kpi-label">Manholes Detailed</div>
+      </div>
+      <div class="kpi-card tilt-card">
+        <div class="kpi-number" data-target="600" data-suffix="+">600+</div>
+        <div class="kpi-label">In-Situ Tests Led</div>
+      </div>
+      <div class="kpi-card tilt-card">
+        <div class="kpi-number" data-target="550" data-suffix="+">550+</div>
+        <div class="kpi-label">Boreholes Supervised</div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
+  <!-- 01: About -->
+  <section id="about" class="section-alt">
     <div class="section-inner">
-      <div class="section-header reveal">
+      <div class="section-header">
         <div class="section-label">01 — About</div>
-        <h2 class="section-title">Career Objective</h2>
+        <h2 class="section-title">Career Objective &amp; Focus</h2>
       </div>
       <div class="about-grid">
-        <div class="about-text reveal">
+        <div class="about-card tilt-card">
           <p>
             Geotechnical and Tunnel Engineer with 6+ years of progressive experience delivering feasibility studies,
             detailed designs, and geotechnical investigations for infrastructure projects valued at over USD 8 billion.
@@ -1792,87 +217,83 @@
             under ADB, World Bank, and international client frameworks.
           </p>
         </div>
-        <div class="stats-grid reveal">
-          <div class="stat-card">
-            <div class="stat-number">6+</div>
-            <div class="stat-label">Years Experience</div>
+        <div class="about-highlights">
+          <div class="highlight-item tilt-card">
+            <div class="highlight-title">TBM &amp; Trenchless Tunnelling</div>
+            <div class="highlight-sub">8.75 m ID TBM thermo-mechanical lining checks, 70 m cross-passages &amp; drainage sumps, and MTBM pipe-jacking mechanics.</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">$8B+</div>
-            <div class="stat-label">Infrastructure Value</div>
+          <div class="highlight-item tilt-card">
+            <div class="highlight-title">Deep Excavations, Slopes &amp; Rock</div>
+            <div class="highlight-sub">Hoek-Brown rock mass characterization, Unwedge/DIPS 70 m shaft wedge stability, and GeoStudio SEEP/W &amp; SLOPE/W modeling.</div>
           </div>
-          <div class="stat-card">
-            <div class="stat-number">600+</div>
-            <div class="stat-label">In-situ Tests Led</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number">550+</div>
-            <div class="stat-label">Boreholes Supervised</div>
+          <div class="highlight-item tilt-card">
+            <div class="highlight-title">Large-Scale Site Investigations</div>
+            <div class="highlight-sub">550+ boreholes and 600+ in-situ tests (SPT, CPT, SCPT, Pressuremeter, Lugeon, HRAT, Downhole Vs) across Bangladesh, UAE &amp; Philippines.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Core Competencies -->
-  <section id="competencies" class="section-alt">
+  <!-- 02: Core Competencies -->
+  <section id="competencies">
     <div class="section-inner">
-      <div class="section-header reveal">
+      <div class="section-header">
         <div class="section-label">02 — Capabilities</div>
         <h2 class="section-title">Core Competencies</h2>
         <p class="section-subtitle">Specialized engineering capabilities across underground structures, highways, ground improvement, and rock mechanics.</p>
       </div>
-      <div class="comp-grid reveal">
-        <div class="comp-card">
+      <div class="comp-grid">
+        <div class="comp-card tilt-card">
           <div class="comp-head">
             <div class="comp-icon"><i data-lucide="compass"></i></div>
             <h3 class="comp-title">Geotechnical Investigation</h3>
           </div>
           <p class="comp-desc">Borehole supervision (SPT, CPT, SCPT, Pressuremeter, Downhole seismic), Lugeon testing, HRAT scanning, soil sampling, logging, and lab test management (sieve, Atterberg limits, hydrometer, direct shear, consolidation, UCS, triaxial).</p>
         </div>
-        <div class="comp-card">
+        <div class="comp-card tilt-card">
           <div class="comp-head">
             <div class="comp-icon"><i data-lucide="layers"></i></div>
             <h3 class="comp-title">Tunnel &amp; Underground Structures</h3>
           </div>
           <p class="comp-desc">TBM lining thermo-mechanical analysis, M-N interaction assessment, MTBM ground deformation prediction, pipe jacking force calculation, manhole and chamber structural design, cross-passage and sump staged excavation analysis (PLAXIS 2D), cross-passage and drainage sump reinforcement detailing, and lining reinforcement design and detailing.</p>
         </div>
-        <div class="comp-card">
+        <div class="comp-card tilt-card">
           <div class="comp-head">
             <div class="comp-icon"><i data-lucide="building"></i></div>
             <h3 class="comp-title">Foundation Design</h3>
           </div>
           <p class="comp-desc">Bearing capacity and pile capacity calculations, settlement analysis, shallow and deep foundation design for bridges and retaining structures.</p>
         </div>
-        <div class="comp-card">
+        <div class="comp-card tilt-card">
           <div class="comp-head">
             <div class="comp-icon"><i data-lucide="mountain"></i></div>
             <h3 class="comp-title">Slope Stability &amp; Embankments</h3>
           </div>
           <p class="comp-desc">Slope stability analysis for during-construction, post-construction, and seismic conditions; embankment design; RC retaining wall design; and erosion control.</p>
         </div>
-        <div class="comp-card">
+        <div class="comp-card tilt-card">
           <div class="comp-head">
             <div class="comp-icon"><i data-lucide="hammer"></i></div>
             <h3 class="comp-title">Ground Improvement</h3>
           </div>
           <p class="comp-desc">PVD, preloading, sand compaction piles, and soil replacement; settlement and consolidation time estimation using Settle3D.</p>
         </div>
-        <div class="comp-card">
+        <div class="comp-card tilt-card">
           <div class="comp-head">
             <div class="comp-icon"><i data-lucide="pickaxe"></i></div>
             <h3 class="comp-title">Rock Mechanics</h3>
           </div>
           <p class="comp-desc">Rock mass classification (RQD, GSI, Hoek-Brown, Mohr-Coulomb), deterministic wedge stability analysis, discontinuity analysis, and groundwater aggressivity assessment.</p>
         </div>
-        <div class="comp-card">
+        <div class="comp-card tilt-card">
           <div class="comp-head">
             <div class="comp-icon"><i data-lucide="activity"></i></div>
             <h3 class="comp-title">Seismic Assessment</h3>
           </div>
           <p class="comp-desc">Liquefaction potential analysis, seismic hazard assessment, and site classification per BNBC 2020.</p>
         </div>
-        <div class="comp-card">
+        <div class="comp-card tilt-card">
           <div class="comp-head">
             <div class="comp-icon"><i data-lucide="clipboard-check"></i></div>
             <h3 class="comp-title">Reporting &amp; Coordination</h3>
@@ -1883,47 +304,45 @@
     </div>
   </section>
 
-  <!-- Education -->
-  <section id="education">
+  <!-- 03: Education -->
+  <section id="education" class="section-alt">
     <div class="section-inner">
-      <div class="section-header reveal">
+      <div class="section-header">
         <div class="section-label">03 — Education</div>
         <h2 class="section-title">Academic Qualification</h2>
       </div>
-      <div class="timeline reveal">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-year">Ongoing (Course Work Complete)</div>
-          <div class="timeline-degree">Master of Science (M.Sc.) in Geotechnical Engineering</div>
-          <div class="timeline-school">Bangladesh University of Engineering &amp; Technology (BUET)</div>
-          <span class="timeline-grade">CGPA: 3.50/4.00</span>
+      <div class="edu-grid">
+        <div class="edu-card tilt-card">
+          <div class="edu-year">Ongoing (Course Work Complete)</div>
+          <h3 class="edu-degree">Master of Science (M.Sc.) in Geotechnical Engineering</h3>
+          <div class="edu-school">Bangladesh University of Engineering &amp; Technology (BUET)</div>
+          <span class="edu-grade">CGPA: 3.50/4.00</span>
           <div class="thesis-box">
             <div class="thesis-label">M.Sc. Thesis (Ongoing)</div>
             <div class="thesis-text">&ldquo;Assessment of Surface Settlement and Ground Deformation Induced by Twin TBM Tunneling Using 3D FEM: A Case Study of Dhaka MRT Line 5 South&rdquo;</div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-year">2019</div>
-          <div class="timeline-degree">Bachelor of Science (B.Sc.) in Civil Engineering</div>
-          <div class="timeline-school">Islamic University of Technology (IUT)</div>
-          <span class="timeline-grade">CGPA: 3.53/4.00</span>
+        <div class="edu-card tilt-card">
+          <div class="edu-year">2019</div>
+          <h3 class="edu-degree">Bachelor of Science (B.Sc.) in Civil Engineering</h3>
+          <div class="edu-school">Islamic University of Technology (IUT)</div>
+          <span class="edu-grade">CGPA: 3.53/4.00</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BUET M.Sc. Coursework -->
-  <section id="coursework" class="section-alt">
+  <!-- 04: BUET M.Sc. Coursework (Whole Card Clickable -> Opens Course Page) -->
+  <section id="coursework">
     <div class="section-inner">
-      <div class="section-header reveal">
+      <div class="section-header">
         <div class="section-label">04 — BUET M.Sc. Coursework</div>
         <h2 class="section-title">Graduate Coursework</h2>
-        <p class="section-subtitle">Six geotechnical courses taken during my M.Sc. in Civil Engineering at BUET. Select any course to view its syllabus overview, coursework snaps, and reports.</p>
+        <p class="section-subtitle">Six geotechnical courses taken during my M.Sc. in Civil Engineering at BUET. Select any course to open its page with syllabus overview, coursework snaps, and reports.</p>
       </div>
 
       <div class="course-grid">
-        <a href="courses/ce6401.html" class="course-card reveal">
+        <a href="courses/ce6401.html" class="course-card tilt-card">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="layers"></i></div>
             <div>
@@ -1944,7 +363,7 @@
           </div>
         </a>
 
-        <a href="courses/ce6403.html" class="course-card reveal">
+        <a href="courses/ce6403.html" class="course-card tilt-card">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="compass"></i></div>
             <div>
@@ -1965,7 +384,7 @@
           </div>
         </a>
 
-        <a href="courses/ce6405.html" class="course-card reveal">
+        <a href="courses/ce6405.html" class="course-card tilt-card">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="mountain"></i></div>
             <div>
@@ -1986,7 +405,7 @@
           </div>
         </a>
 
-        <a href="courses/ce6409.html" class="course-card reveal">
+        <a href="courses/ce6409.html" class="course-card tilt-card">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="shield-check"></i></div>
             <div>
@@ -2007,7 +426,7 @@
           </div>
         </a>
 
-        <a href="courses/ce6410.html" class="course-card reveal">
+        <a href="courses/ce6410.html" class="course-card tilt-card">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="cpu"></i></div>
             <div>
@@ -2028,7 +447,7 @@
           </div>
         </a>
 
-        <a href="courses/ce6411.html" class="course-card reveal">
+        <a href="courses/ce6411.html" class="course-card tilt-card">
           <div class="course-head">
             <div class="comp-icon"><i data-lucide="activity"></i></div>
             <div>
@@ -2052,314 +471,450 @@
     </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience">
+  <!-- 05: Dynamic Experience Explorer -->
+  <section id="experience" class="section-alt">
     <div class="section-inner">
-      <div class="section-header reveal">
-        <div class="section-label">05 — Experience</div>
+      <div class="section-header">
+        <div class="section-label">05 — Experience Explorer</div>
         <h2 class="section-title">Professional Journey</h2>
-        <p class="section-subtitle">Engineering deliverables across TBM high-speed rail tunnels, sewerage tunnels, pumped storage hydropower, national highways, bridges, and urban resilience.</p>
+        <p class="section-subtitle">Explore all 11 projects by career stage, discipline, region, or software/keyword search in either interactive Spotlight Inspector or Accordion Timeline mode.</p>
       </div>
 
-      <div class="filter-bar reveal" role="tablist" aria-label="Filter projects by discipline">
-        <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
-        <button type="button" class="filter-btn" data-filter="tunnel">Tunnels &amp; Hydropower</button>
-        <button type="button" class="filter-btn" data-filter="highway">Highways, Bridges &amp; Transport</button>
-        <button type="button" class="filter-btn" data-filter="urban">Urban, Investigation &amp; Contracts</button>
+      <!-- Interactive Career Timeline Stage Strip -->
+      <div class="career-stages" role="group" aria-label="Filter by career stage">
+        <button type="button" class="stage-btn active" data-stage="all">
+          <span class="stage-period">2020 — Present</span>
+          <span class="stage-name">All Career Stages (11)</span>
+          <span class="stage-sub">ACE Consultants &amp; SDE</span>
+        </button>
+        <button type="button" class="stage-btn" data-stage="tunnel-role">
+          <span class="stage-period">Mar 2026 — Present</span>
+          <span class="stage-name">Geotechnical &amp; Tunnel (3)</span>
+          <span class="stage-sub">ACE Consultants Ltd.</span>
+        </button>
+        <button type="button" class="stage-btn" data-stage="survey-role">
+          <span class="stage-period">Aug 2023 — Feb 2026</span>
+          <span class="stage-name">Geotechnical &amp; Survey (6)</span>
+          <span class="stage-sub">ACE Consultants Ltd.</span>
+        </button>
+        <button type="button" class="stage-btn" data-stage="sde-role">
+          <span class="stage-period">Jan 2020 — Jul 2023</span>
+          <span class="stage-name">Junior Geotechnical (2)</span>
+          <span class="stage-sub">Smart Development Engg.</span>
+        </button>
       </div>
 
-      <!-- ACE Consultants -->
-      <div class="exp-item reveal">
-        <div class="exp-header">
-          <div>
-            <div class="exp-company">ACE Consultants Ltd.</div>
-            <div class="exp-company-sub">A subsidiary of SMEC International Pty Ltd.</div>
+      <!-- Multi-Facet Filter & Search Panel -->
+      <div class="exp-controls-panel">
+        <div class="exp-controls-row">
+          <div class="filter-bar" role="tablist" aria-label="Filter projects by discipline">
+            <button type="button" class="filter-btn active" data-filter="all">All Projects (11)</button>
+            <button type="button" class="filter-btn" data-filter="tunnel">Tunnels &amp; Hydropower (3)</button>
+            <button type="button" class="filter-btn" data-filter="highway">Highways &amp; Bridges (5)</button>
+            <button type="button" class="filter-btn" data-filter="urban">Urban &amp; Investigation (3)</button>
           </div>
-          <div class="exp-meta-right">
-            <div class="exp-role">Junior Engineer — Geotechnical &amp; Tunnel / Survey</div>
-            <div class="exp-date">01 Aug 2023 — Present</div>
+
+          <div class="exp-right-tools">
+            <div class="search-input-box">
+              <i data-lucide="search"></i>
+              <input type="search" id="exp-search" class="exp-search-input" placeholder="Search tools, clients, keywords..." aria-label="Search projects">
+            </div>
+
+            <div class="view-switch" role="group" aria-label="Switch experience layout">
+              <button type="button" class="view-btn active" data-exp-view="spotlight">
+                <i data-lucide="columns" style="width:14px;height:14px;"></i>
+                Spotlight
+              </button>
+              <button type="button" class="view-btn" data-exp-view="timeline">
+                <i data-lucide="list" style="width:14px;height:14px;"></i>
+                Timeline
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="role-divider" data-role-group="tunnel-role">Role: Junior Engineer — Geotechnical &amp; Tunnel (Mar 2026 — Present)</div>
-
-        <div class="project-block" data-category="tunnel" data-role="tunnel-role">
-          <div class="project-title">
-            <i data-lucide="train-front"></i>
-            Detail Design TBM Tunnel of Etihad High Speed Rail
+        <div class="exp-controls-row">
+          <div class="filter-bar" role="group" aria-label="Filter projects by region">
+            <button type="button" class="region-btn active" data-region-filter="all">All Regions</button>
+            <button type="button" class="region-btn" data-region-filter="uae">UAE (2)</button>
+            <button type="button" class="region-btn" data-region-filter="philippines">Philippines (1)</button>
+            <button type="button" class="region-btn" data-region-filter="bangladesh">Bangladesh (8)</button>
           </div>
-          <div class="project-meta">
-            <span><i data-lucide="circle-dollar-sign"></i> USD $8+ B</span>
-            <span><i data-lucide="building-2"></i> Etihad Rail, UAE</span>
-            <span><i data-lucide="calendar"></i> Mar 2026 — Present</span>
-          </div>
-          <ul>
-            <li>Conducted thermo-mechanical analysis of an 8.75 m ID TBM tunnel lining using PLAXIS 2D to simulate transient heat transfer and structural degradation under the HCM fire curve for 120-minute exposure scenarios.</li>
-            <li>Evaluated the ultimate limit state of the tunnel lining by analyzing M-N (Moment-Axial Force) interaction curves per EN 1992-1-2, ensuring structural safety under extreme thermal loading conditions.</li>
-            <li>Modelled the 3D ring (hoop) stiffness of the circular sump (&Oslash;3.5 m) in 2D by calibrating equivalent spring stiffness from a separate field stress parametric study (stress vs. displacement) and applying it as fixed-end anchors.</li>
-            <li>Built 2D finite element models in PLAXIS 2D of a horseshoe cross-passage with an integrated drainage sump at 70 m depth.</li>
-            <li>Executed structural reinforcement detailing for tunnel cross-passages with integrated drainage sumps in accordance with project specifications.</li>
-            <li>Simulated sequential excavation and support using the stress relaxation (&beta;) method and modelled the age-dependent stiffness of the shotcrete lining across construction stages.</li>
-            <li>Prepared comprehensive structural drawings for the permanent shafts, ensuring precise alignment with project specifications.</li>
-          </ul>
-        </div>
-
-        <div class="project-block" data-category="tunnel" data-role="tunnel-role">
-          <div class="project-title">
-            <i data-lucide="layers"></i>
-            Tender Design — Dubai Strategic Sewerage Tunnel Phase 2
-          </div>
-          <div class="project-meta">
-            <span><i data-lucide="circle-dollar-sign"></i> USD $8+ B</span>
-            <span><i data-lucide="building-2"></i> Dubai Municipality, UAE</span>
-          </div>
-          <ul>
-            <li>Developed 15+ FEM ground models using RS2 to evaluate subsurface stability and predict ground deformation during MTBM operations at depths ranging from 6.5 m to 70 m.</li>
-            <li>Executed structural design and stress analysis for deep underground chambers of varying geometries up to 70 m depth using STAAD.Pro, ensuring integrity under complex soil-structure interactions.</li>
-            <li>Optimized pipe jacking drive lengths by calculating anticipated jacking forces and allowable pipe stress capacities for trenchless execution.</li>
-            <li>Authored Design Basis Reports (DBRs) and calculation packages for shafts, manholes, and link sewer interfaces to Eurocodes (BS EN 1990, 1992, 1997, 1998) and the Dubai Building Code, including site-specific seismic derivations (k<sub>h</sub>, k<sub>v</sub>) from downhole shear-wave velocity (V<sub>s</sub>) data.</li>
-            <li>Enhanced slurry pipe-jacking force predictions using Terzaghi silo arching and Persson&rsquo;s elastic pipe&ndash;soil&ndash;slurry contact mechanics, accounting for effective submerged buoyancy, radial overcut, and bentonite lubrication to optimize drive lengths and thrust wall capacities.</li>
-            <li>Led technical resolution of Engineer/Client review comments (CRS) across DBRs and structural calculations, coordinating between structural, geotechnical, and tunnelling teams.</li>
-            <li>Compiled comprehensive manhole schedules and alignment data for 726 manholes across the 136 km strategic sewerage system.</li>
-            <li>Directed the preparation of typical structural drawings for manholes and underground infrastructure.</li>
-            <li>Developed a detailed Bill of Quantities (BOQ) based on preliminary designs to facilitate accurate tender cost estimation.</li>
-            <li>Performed generalized reinforcement design and detailing for tender design for shaft walls, chamber walls, base slabs, top slabs, and access shafts across all 726 manholes.</li>
-          </ul>
-        </div>
-
-        <div class="project-block" data-category="tunnel" data-role="tunnel-role">
-          <div class="project-title">
-            <i data-lucide="zap"></i>
-            Magat Pump Storage Project, Philippines
-          </div>
-          <div class="project-meta">
-            <span><i data-lucide="building-2"></i> SN Aboitiz Power-Magat Inc. (SNAP)</span>
-          </div>
-          <ul>
-            <li>Reviewed the Geotechnical Factual Report covering 10 deep boreholes (up to 75 m depth) and 4 Lugeon permeability tests, and developed longitudinal and cross-sectional subsurface profiles for powerhouse, waterway, and dam abutment areas.</li>
-            <li>Prepared the Geotechnical Interpretative Report (GIR) for the pumped storage hydropower project adjacent to an existing large dam, interpreting deep boreholes (up to 75 m), Lugeon testing, and HRAT scanning.</li>
-            <li>Developed a rock mass classification framework defining Rock Units (RU-I to RU-III) based on RQD per EN 1997-2 and ISRM guidelines.</li>
-            <li>Derived Hoek-Brown, Generalized Hoek-Brown, and Mohr-Coulomb design parameters (&sigma;<sub>ci</sub>, GSI, m<sub>b</sub>, s, a, c&prime;, &phi;&prime;) using statistical analysis of UCS, STS, and rock quality index data.</li>
-            <li>Assessed groundwater aggressivity to concrete per EN 206-1, including pH, chloride, sulphate, and Alkali-Silica Reactivity (ASR) testing.</li>
-            <li>Performed deterministic wedge stability analysis for a 70 m deep vertical shaft (26 m &times; 20 m) using Unwedge (Rocscience), evaluating 56 joint combinations from 8 discontinuity sets processed from HRAT data in DIPS (Rocscience).</li>
-          </ul>
-        </div>
-
-        <div class="role-divider" data-role-group="survey-role" style="margin-top: 1.75rem;">Role: Junior Engineer (Geotechnical &amp; Survey) (Aug 2023 — Feb 2026)</div>
-
-        <div class="project-block" data-category="highway" data-role="survey-role">
-          <div class="project-title">
-            <i data-lucide="route"></i>
-            Dhaka–Chattogram National Highway (N1) — 231km (Feasibility &amp; Detailed Design)
-          </div>
-          <div class="project-meta">
-            <span><i data-lucide="file-badge"></i> Package: SVC-P3 (CS-04)</span>
-            <span><i data-lucide="landmark"></i> ADB [Loan 6030-BAN]</span>
-            <span><i data-lucide="circle-dollar-sign"></i> USD $4.91 M</span>
-            <span><i data-lucide="building-2"></i> Roads and Highways Department (RHD)</span>
-            <span><i data-lucide="calendar"></i> Aug 2023 — Feb 2026</span>
-          </div>
-          <ul>
-            <li>Supervised geotechnical investigation comprising 200+ boreholes along the 231 km corridor, including in-situ testing (SPT, DCPT), sampling, and laboratory tests.</li>
-            <li>Conducted embankment design and slope stability analysis using GeoStudio SLOPE/W for embankments up to 12 m height, achieving required FoS for during-construction, post-construction, and seismic loading conditions.</li>
-            <li>Performed bearing capacity, pile capacity, and settlement calculations for deep and shallow foundations supporting bridges and retaining structures.</li>
-            <li>Analyzed ground improvement solutions (Preloading, Replacement, Sand Compaction Pile, PVD) using Settle3D across 10+ km of soft ground, reducing maximum predicted settlement from 1.2 m to 100 mm.</li>
-            <li>Designed reinforced concrete (RC) retaining walls, provided erosion control recommendations for cut/fill sections, and estimated 250,000+ m&sup3; of earthwork quantities for ground improvement.</li>
-            <li>Conducted liquefaction potential analysis and seismic hazard assessment for critical zones, evaluated borrow area suitability, and interpreted borehole logging &amp; SPT data for subsoil profiles.</li>
-            <li>Used QGIS to map borehole locations along the alignment for detailed site characterization.</li>
-          </ul>
-        </div>
-
-        <div class="project-block" data-category="highway" data-role="survey-role">
-          <div class="project-title">
-            <i data-lucide="map"></i>
-            Improvement of 22 Road Sections (1,480 km) — Feasibility Study
-          </div>
-          <div class="project-meta">
-            <span><i data-lucide="file-badge"></i> Package: SVC-P1 (CS-01)</span>
-            <span><i data-lucide="landmark"></i> ADB [Loan 6030-BAN]</span>
-            <span><i data-lucide="circle-dollar-sign"></i> USD $6.89 M</span>
-            <span><i data-lucide="building-2"></i> Roads and Highways Department (RHD)</span>
-          </div>
-          <ul>
-            <li>Conducted preliminary embankment design, slope stability checks, foundation analysis, settlement assessment, and alignment optimization across 22 road corridors spanning 1,480 km connecting 3 logistics facilities and level crossing safety.</li>
-            <li>Supervised geotechnical site investigations, prepared Geotechnical Interpretative Reports, and conducted reconnaissance surveys across 4+ project sites.</li>
-            <li>Conducted Multi-Criteria Analysis (MCA) to evaluate and recommend existing alignments and alternative routes.</li>
-            <li>Managed internal coordination for deliverable preparation and authored technical reports for survey submissions, feasibility studies, and preliminary design.</li>
-          </ul>
-        </div>
-
-        <div class="project-block" data-category="highway" data-role="survey-role">
-          <div class="project-title">
-            <i data-lucide="building"></i>
-            Comprehensive Transport Master Plan — Narayanganj City Corporation
-          </div>
-          <div class="project-meta">
-            <span><i data-lucide="landmark"></i> Govt. of Bangladesh (GoB)</span>
-            <span><i data-lucide="circle-dollar-sign"></i> USD $2.04 M</span>
-            <span><i data-lucide="building-2"></i> DTCA</span>
-          </div>
-          <ul>
-            <li>Conducted comprehensive site selection planning for geotechnical investigations across project areas.</li>
-            <li>Performed detailed subsurface investigations in Narayanganj City Corporation for the proposed Light Rail Transit (LRT) alignment.</li>
-            <li>Executed bearing capacity calculations, soil interpretation, and ground improvement recommendations for soft soil treatment.</li>
-          </ul>
-        </div>
-
-        <div class="project-block" data-category="highway" data-role="survey-role">
-          <div class="project-title">
-            <i data-lucide="compass"></i>
-            Dhaka Outer Ring Road (171 km): Eastern, Western &amp; Northern Part
-          </div>
-          <div class="project-meta">
-            <span><i data-lucide="landmark"></i> Govt. of Bangladesh (GoB)</span>
-            <span><i data-lucide="circle-dollar-sign"></i> USD $1.1 M</span>
-            <span><i data-lucide="building-2"></i> DTCA</span>
-          </div>
-          <ul>
-            <li>Supervised and directed geotechnical investigations across the 171 km project corridor, including borehole drilling, in-situ testing (SPT, CPT), and soil sampling.</li>
-            <li>Identified problematic soil zones (soft clay and loose sand), recommended ground improvement treatments, and optimized foundation solutions for bridges and structures.</li>
-            <li>Provided geotechnical design parameters for pavement design including CBR, modulus values, and drainage recommendations, and conducted preliminary embankment slope stability analyses using GeoStudio SLOPE/W.</li>
-          </ul>
-        </div>
-
-        <div class="project-block" data-category="urban" data-role="survey-role">
-          <div class="project-title">
-            <i data-lucide="graduation-cap"></i>
-            Permanent Campus of Asian University for Women (AUW), Chattogram
-          </div>
-          <div class="project-meta">
-            <span><i data-lucide="circle-dollar-sign"></i> Est. USD $100+ M</span>
-            <span><i data-lucide="landmark"></i> Private Philanthropy &amp; Int&rsquo;l Grants</span>
-            <span><i data-lucide="building-2"></i> AUW</span>
-          </div>
-          <ul>
-            <li><strong>Contract Customization:</strong> Assisted in adapting ADB Standard Bidding Documents (SBD) for campus-wide steel structural packages.</li>
-            <li><strong>PCC &amp; Risk Support:</strong> Collaborated on drafting Particular Conditions of Contract (PCC) covering liability thresholds, insurance, and performance security clauses.</li>
-            <li><strong>Document Synthesis:</strong> Integrated Technical Specifications, Bill of Quantities (BoQ), and architectural drawings into the final Contract Agreement.</li>
-            <li><strong>Procurement Liaison:</strong> Supported Contractor Proposal review and preparation of Notification of Award (NOA) documentation under fast-tracked timelines.</li>
-          </ul>
-        </div>
-
-        <div class="project-block" data-category="highway" data-role="survey-role">
-          <div class="project-title">
-            <i data-lucide="map-pinned"></i>
-            2nd Sultana Kamal Bridge (R201) &amp; Mayanagar Township Project
-          </div>
-          <div class="project-meta">
-            <span><i data-lucide="building-2"></i> RHD &amp; Sreepur Township Ltd.</span>
-          </div>
-          <ul>
-            <li><strong>2nd Sultana Kamal Bridge (RHD):</strong> Feasibility study and detailed design over River Shitalakhya (Tarabo–Demra Regional Highway R201), including Tarabo (N2) and Kanchpur (N1) intersections.</li>
-            <li><strong>Mayanagar Township Project (Sreepur Township Ltd.):</strong> Master planning and detailed design geotechnical support.</li>
-            <li>Supervised geotechnical investigations including borehole drilling, in-situ testing (SPT, CPT, Pressuremeter tests, seismic downhole tests, DCPT), sampling, and laboratory testing.</li>
-          </ul>
         </div>
       </div>
 
-      <!-- SDE -->
-      <div class="exp-item reveal">
-        <div class="exp-header">
-          <div>
-            <div class="exp-company">Smart Development Engineering Ltd. (SDE)</div>
+      <div id="exp-filter-status" class="exp-filter-status" style="display:none;">
+        <span id="exp-status-text"></span>
+        <button type="button" id="clear-exp-filter" class="clear-filter-btn">Reset All Filters</button>
+      </div>
+
+      <!-- View 1: Interactive Master-Detail Spotlight Explorer -->
+      <div id="exp-spotlight" class="spotlight-grid">
+        <div id="spotlight-rail" class="spotlight-rail" role="listbox" aria-label="Select project to inspect"></div>
+        <div id="exp-detail-stage" class="spotlight-detail" aria-live="polite"></div>
+      </div>
+
+      <!-- View 2: Full Chronological Accordion Timeline (Single Source of Truth) -->
+      <div id="exp-timeline-tools" class="exp-timeline-tools" style="display:none;">
+        <button type="button" id="exp-expand-all" class="clear-filter-btn">Expand All</button>
+        <button type="button" id="exp-collapse-all" class="clear-filter-btn">Collapse All</button>
+      </div>
+
+      <div id="exp-timeline-list" class="timeline-container" hidden>
+        <!-- ACE Consultants -->
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">ACE Consultants Ltd.</div>
+              <div class="exp-company-sub">A subsidiary of SMEC International Pty Ltd.</div>
+            </div>
+            <div class="exp-meta-right">
+              <div class="exp-role">Junior Engineer — Geotechnical &amp; Tunnel / Survey</div>
+              <div class="exp-date">01 Aug 2023 — Present</div>
+            </div>
           </div>
-          <div class="exp-meta-right">
-            <div class="exp-role">Junior Geotechnical Engineer</div>
-            <div class="exp-date">04 Jan 2020 — 31 Jul 2023</div>
+
+          <div class="role-divider" data-role-group="tunnel-role">Role: Junior Engineer — Geotechnical &amp; Tunnel (Mar 2026 — Present)</div>
+
+          <div class="project-block" data-category="tunnel" data-role="tunnel-role" data-region="uae">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="train-front"></i>
+                  <span class="project-title-text">Detail Design TBM Tunnel of Etihad High Speed Rail</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="circle-dollar-sign"></i> USD $8+ B</span>
+                  <span><i data-lucide="building-2"></i> Etihad Rail, UAE</span>
+                  <span><i data-lucide="calendar"></i> Mar 2026 — Present</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li>Conducted thermo-mechanical analysis of an 8.75 m ID TBM tunnel lining using PLAXIS 2D to simulate transient heat transfer and structural degradation under the HCM fire curve for 120-minute exposure scenarios.</li>
+              <li>Evaluated the ultimate limit state of the tunnel lining by analyzing M-N (Moment-Axial Force) interaction curves per EN 1992-1-2, ensuring structural safety under extreme thermal loading conditions.</li>
+              <li>Modelled the 3D ring (hoop) stiffness of the circular sump (&Oslash;3.5 m) in 2D by calibrating equivalent spring stiffness from a separate field stress parametric study (stress vs. displacement) and applying it as fixed-end anchors.</li>
+              <li>Built 2D finite element models in PLAXIS 2D of a horseshoe cross-passage with an integrated drainage sump at 70 m depth.</li>
+              <li>Executed structural reinforcement detailing for tunnel cross-passages with integrated drainage sumps in accordance with project specifications.</li>
+              <li>Simulated sequential excavation and support using the stress relaxation (&beta;) method and modelled the age-dependent stiffness of the shotcrete lining across construction stages.</li>
+              <li>Prepared comprehensive structural drawings for the permanent shafts, ensuring precise alignment with project specifications.</li>
+            </ul>
+          </div>
+
+          <div class="project-block" data-category="tunnel" data-role="tunnel-role" data-region="uae">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="layers"></i>
+                  <span class="project-title-text">Tender Design — Dubai Strategic Sewerage Tunnel Phase 2</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="circle-dollar-sign"></i> USD $8+ B</span>
+                  <span><i data-lucide="building-2"></i> Dubai Municipality, UAE</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li>Developed 15+ FEM ground models using RS2 to evaluate subsurface stability and predict ground deformation during MTBM operations at depths ranging from 6.5 m to 70 m.</li>
+              <li>Executed structural design and stress analysis for deep underground chambers of varying geometries up to 70 m depth using STAAD.Pro, ensuring integrity under complex soil-structure interactions.</li>
+              <li>Optimized pipe jacking drive lengths by calculating anticipated jacking forces and allowable pipe stress capacities for trenchless execution.</li>
+              <li>Authored Design Basis Reports (DBRs) and calculation packages for shafts, manholes, and link sewer interfaces to Eurocodes (BS EN 1990, 1992, 1997, 1998) and the Dubai Building Code, including site-specific seismic derivations (k<sub>h</sub>, k<sub>v</sub>) from downhole shear-wave velocity (V<sub>s</sub>) data.</li>
+              <li>Enhanced slurry pipe-jacking force predictions using Terzaghi silo arching and Persson&rsquo;s elastic pipe&ndash;soil&ndash;slurry contact mechanics, accounting for effective submerged buoyancy, radial overcut, and bentonite lubrication to optimize drive lengths and thrust wall capacities.</li>
+              <li>Led technical resolution of Engineer/Client review comments (CRS) across DBRs and structural calculations, coordinating between structural, geotechnical, and tunnelling teams.</li>
+              <li>Compiled comprehensive manhole schedules and alignment data for 726 manholes across the 136 km strategic sewerage system.</li>
+              <li>Directed the preparation of typical structural drawings for manholes and underground infrastructure.</li>
+              <li>Developed a detailed Bill of Quantities (BOQ) based on preliminary designs to facilitate accurate tender cost estimation.</li>
+              <li>Performed generalized reinforcement design and detailing for tender design for shaft walls, chamber walls, base slabs, top slabs, and access shafts across all 726 manholes.</li>
+            </ul>
+          </div>
+
+          <div class="project-block" data-category="tunnel" data-role="tunnel-role" data-region="philippines">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="zap"></i>
+                  <span class="project-title-text">Magat Pump Storage Project, Philippines</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="building-2"></i> SN Aboitiz Power-Magat Inc. (SNAP)</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li>Reviewed the Geotechnical Factual Report covering 10 deep boreholes (up to 75 m depth) and 4 Lugeon permeability tests, and developed longitudinal and cross-sectional subsurface profiles for powerhouse, waterway, and dam abutment areas.</li>
+              <li>Prepared the Geotechnical Interpretative Report (GIR) for the pumped storage hydropower project adjacent to an existing large dam, interpreting deep boreholes (up to 75 m), Lugeon testing, and HRAT scanning.</li>
+              <li>Developed a rock mass classification framework defining Rock Units (RU-I to RU-III) based on RQD per EN 1997-2 and ISRM guidelines.</li>
+              <li>Derived Hoek-Brown, Generalized Hoek-Brown, and Mohr-Coulomb design parameters (&sigma;<sub>ci</sub>, GSI, m<sub>b</sub>, s, a, c&prime;, &phi;&prime;) using statistical analysis of UCS, STS, and rock quality index data.</li>
+              <li>Assessed groundwater aggressivity to concrete per EN 206-1, including pH, chloride, sulphate, and Alkali-Silica Reactivity (ASR) testing.</li>
+              <li>Performed deterministic wedge stability analysis for a 70 m deep vertical shaft (26 m &times; 20 m) using Unwedge (Rocscience), evaluating 56 joint combinations from 8 discontinuity sets processed from HRAT data in DIPS (Rocscience).</li>
+            </ul>
+          </div>
+
+          <div class="role-divider" data-role-group="survey-role" style="margin-top: 1.5rem;">Role: Junior Engineer (Geotechnical &amp; Survey) (Aug 2023 — Feb 2026)</div>
+
+          <div class="project-block" data-category="highway" data-role="survey-role" data-region="bangladesh">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="route"></i>
+                  <span class="project-title-text">Dhaka–Chattogram National Highway (N1) — 231km (Feasibility &amp; Detailed Design)</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="file-badge"></i> Package: SVC-P3 (CS-04)</span>
+                  <span><i data-lucide="landmark"></i> ADB [Loan 6030-BAN]</span>
+                  <span><i data-lucide="circle-dollar-sign"></i> USD $4.91 M</span>
+                  <span><i data-lucide="building-2"></i> Roads and Highways Department (RHD)</span>
+                  <span><i data-lucide="calendar"></i> Aug 2023 — Feb 2026</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li>Supervised geotechnical investigation comprising 200+ boreholes along the 231 km corridor, including in-situ testing (SPT, DCPT), sampling, and laboratory tests.</li>
+              <li>Conducted embankment design and slope stability analysis using GeoStudio SLOPE/W for embankments up to 12 m height, achieving required FoS for during-construction, post-construction, and seismic loading conditions.</li>
+              <li>Performed bearing capacity, pile capacity, and settlement calculations for deep and shallow foundations supporting bridges and retaining structures.</li>
+              <li>Analyzed ground improvement solutions (Preloading, Replacement, Sand Compaction Pile, PVD) using Settle3D across 10+ km of soft ground, reducing maximum predicted settlement from 1.2 m to 100 mm.</li>
+              <li>Designed reinforced concrete (RC) retaining walls, provided erosion control recommendations for cut/fill sections, and estimated 250,000+ m&sup3; of earthwork quantities for ground improvement.</li>
+              <li>Conducted liquefaction potential analysis and seismic hazard assessment for critical zones, evaluated borrow area suitability, and interpreted borehole logging &amp; SPT data for subsoil profiles.</li>
+              <li>Used QGIS to map borehole locations along the alignment for detailed site characterization.</li>
+            </ul>
+          </div>
+
+          <div class="project-block" data-category="highway" data-role="survey-role" data-region="bangladesh">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="map"></i>
+                  <span class="project-title-text">Improvement of 22 Road Sections (1,480 km) — Feasibility Study</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="file-badge"></i> Package: SVC-P1 (CS-01)</span>
+                  <span><i data-lucide="landmark"></i> ADB [Loan 6030-BAN]</span>
+                  <span><i data-lucide="circle-dollar-sign"></i> USD $6.89 M</span>
+                  <span><i data-lucide="building-2"></i> Roads and Highways Department (RHD)</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li>Conducted preliminary embankment design, slope stability checks, foundation analysis, settlement assessment, and alignment optimization across 22 road corridors spanning 1,480 km connecting 3 logistics facilities and level crossing safety.</li>
+              <li>Supervised geotechnical site investigations, prepared Geotechnical Interpretative Reports, and conducted reconnaissance surveys across 4+ project sites.</li>
+              <li>Conducted Multi-Criteria Analysis (MCA) to evaluate and recommend existing alignments and alternative routes.</li>
+              <li>Managed internal coordination for deliverable preparation and authored technical reports for survey submissions, feasibility studies, and preliminary design.</li>
+            </ul>
+          </div>
+
+          <div class="project-block" data-category="highway" data-role="survey-role" data-region="bangladesh">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="building"></i>
+                  <span class="project-title-text">Comprehensive Transport Master Plan — Narayanganj City Corporation</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="landmark"></i> Govt. of Bangladesh (GoB)</span>
+                  <span><i data-lucide="circle-dollar-sign"></i> USD $2.04 M</span>
+                  <span><i data-lucide="building-2"></i> DTCA</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li>Conducted comprehensive site selection planning for geotechnical investigations across project areas.</li>
+              <li>Performed detailed subsurface investigations in Narayanganj City Corporation for the proposed Light Rail Transit (LRT) alignment.</li>
+              <li>Executed bearing capacity calculations, soil interpretation, and ground improvement recommendations for soft soil treatment.</li>
+            </ul>
+          </div>
+
+          <div class="project-block" data-category="highway" data-role="survey-role" data-region="bangladesh">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="compass"></i>
+                  <span class="project-title-text">Dhaka Outer Ring Road (171 km): Eastern, Western &amp; Northern Part</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="landmark"></i> Govt. of Bangladesh (GoB)</span>
+                  <span><i data-lucide="circle-dollar-sign"></i> USD $1.1 M</span>
+                  <span><i data-lucide="building-2"></i> DTCA</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li>Supervised and directed geotechnical investigations across the 171 km project corridor, including borehole drilling, in-situ testing (SPT, CPT), and soil sampling.</li>
+              <li>Identified problematic soil zones (soft clay and loose sand), recommended ground improvement treatments, and optimized foundation solutions for bridges and structures.</li>
+              <li>Provided geotechnical design parameters for pavement design including CBR, modulus values, and drainage recommendations, and conducted preliminary embankment slope stability analyses using GeoStudio SLOPE/W.</li>
+            </ul>
+          </div>
+
+          <div class="project-block" data-category="urban" data-role="survey-role" data-region="bangladesh">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="graduation-cap"></i>
+                  <span class="project-title-text">Permanent Campus of Asian University for Women (AUW), Chattogram</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="circle-dollar-sign"></i> Est. USD $100+ M</span>
+                  <span><i data-lucide="landmark"></i> Private Philanthropy &amp; Int&rsquo;l Grants</span>
+                  <span><i data-lucide="building-2"></i> AUW</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li><strong>Contract Customization:</strong> Assisted in adapting ADB Standard Bidding Documents (SBD) for campus-wide steel structural packages.</li>
+              <li><strong>PCC &amp; Risk Support:</strong> Collaborated on drafting Particular Conditions of Contract (PCC) covering liability thresholds, insurance, and performance security clauses.</li>
+              <li><strong>Document Synthesis:</strong> Integrated Technical Specifications, Bill of Quantities (BoQ), and architectural drawings into the final Contract Agreement.</li>
+              <li><strong>Procurement Liaison:</strong> Supported Contractor Proposal review and preparation of Notification of Award (NOA) documentation under fast-tracked timelines.</li>
+            </ul>
+          </div>
+
+          <div class="project-block" data-category="highway" data-role="survey-role" data-region="bangladesh">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="map-pinned"></i>
+                  <span class="project-title-text">2nd Sultana Kamal Bridge (R201) &amp; Mayanagar Township Project</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="building-2"></i> RHD &amp; Sreepur Township Ltd.</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li><strong>2nd Sultana Kamal Bridge (RHD):</strong> Feasibility study and detailed design over River Shitalakhya (Tarabo–Demra Regional Highway R201), including Tarabo (N2) and Kanchpur (N1) intersections.</li>
+              <li><strong>Mayanagar Township Project (Sreepur Township Ltd.):</strong> Master planning and detailed design geotechnical support.</li>
+              <li>Supervised geotechnical investigations including borehole drilling, in-situ testing (SPT, CPT, Pressuremeter tests, seismic downhole tests, DCPT), sampling, and laboratory testing.</li>
+            </ul>
           </div>
         </div>
 
-        <div class="project-block" data-category="urban">
-          <div class="project-title">
-            <i data-lucide="shield-check"></i>
-            Risk Sensitive Land Use Planning (RSLUP) for Urban Resilience Unit (URU)
+        <!-- SDE -->
+        <div class="exp-item">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Smart Development Engineering Ltd. (SDE)</div>
+            </div>
+            <div class="exp-meta-right">
+              <div class="exp-role">Junior Geotechnical Engineer</div>
+              <div class="exp-date">04 Jan 2020 — 31 Jul 2023</div>
+            </div>
           </div>
-          <div class="project-meta">
-            <span><i data-lucide="file-badge"></i> Package: URP/RAJUK/S-5</span>
-            <span><i data-lucide="landmark"></i> World Bank (IDA)</span>
-            <span><i data-lucide="circle-dollar-sign"></i> USD $5.8 M</span>
-            <span><i data-lucide="building-2"></i> RAJUK</span>
-          </div>
-          <ul>
-            <li>Led 600+ in-situ SPT/CPT/SCPT tests and downhole seismic surveys ensuring ASTM compliance across Dhaka (DAP area).</li>
-            <li>Supervised soil sampling and logging for 350+ boreholes, classifying soil strata and site classes per BNBC 2020.</li>
-            <li>Coordinated with RAJUK planners and consultants to align geotechnical data with urban zoning and master plans, resolving land-use disputes.</li>
-            <li>Managed 8+ lab technicians performing sieve analysis, Atterberg limits, hydrometer, direct shear, consolidation, unconfined compression, and triaxial tests, while implementing QA/QC calibration protocols.</li>
-            <li>Prepared ASTM-compliant reports for client submissions and trained 8+ local site engineers on field-testing and documentation.</li>
-          </ul>
-        </div>
 
-        <div class="project-block" data-category="urban">
-          <div class="project-title">
-            <i data-lucide="folder-kanban"></i>
-            Additional Geotechnical &amp; Structural Assessments
+          <div class="project-block" data-category="urban" data-role="sde-role" data-region="bangladesh">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="shield-check"></i>
+                  <span class="project-title-text">Risk Sensitive Land Use Planning (RSLUP) for Urban Resilience Unit (URU)</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="file-badge"></i> Package: URP/RAJUK/S-5</span>
+                  <span><i data-lucide="landmark"></i> World Bank (IDA)</span>
+                  <span><i data-lucide="circle-dollar-sign"></i> USD $5.8 M</span>
+                  <span><i data-lucide="building-2"></i> RAJUK</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li>Led 600+ in-situ SPT/CPT/SCPT tests and downhole seismic surveys ensuring ASTM compliance across Dhaka (DAP area).</li>
+              <li>Supervised soil sampling and logging for 350+ boreholes, classifying soil strata and site classes per BNBC 2020.</li>
+              <li>Coordinated with RAJUK planners and consultants to align geotechnical data with urban zoning and master plans, resolving land-use disputes.</li>
+              <li>Managed 8+ lab technicians performing sieve analysis, Atterberg limits, hydrometer, direct shear, consolidation, unconfined compression, and triaxial tests, while implementing QA/QC calibration protocols.</li>
+              <li>Prepared ASTM-compliant reports for client submissions and trained 8+ local site engineers on field-testing and documentation.</li>
+            </ul>
           </div>
-          <div class="project-meta">
-            <span><i data-lucide="building-2"></i> LGED, Gazipur City Corp., Savar Pourashava, Well Dresses Ltd.</span>
+
+          <div class="project-block" data-category="urban" data-role="sde-role" data-region="bangladesh">
+            <button type="button" class="project-acc-trigger" aria-expanded="true">
+              <div>
+                <div class="project-title">
+                  <i data-lucide="folder-kanban"></i>
+                  <span class="project-title-text">Additional Geotechnical &amp; Structural Assessments</span>
+                </div>
+                <div class="project-meta">
+                  <span><i data-lucide="building-2"></i> LGED, Gazipur City Corp., Savar Pourashava, Well Dresses Ltd.</span>
+                </div>
+              </div>
+              <i data-lucide="chevron-down" class="project-acc-chevron" style="width:18px;height:18px;"></i>
+            </button>
+            <ul>
+              <li>Joint Research on Detail Engineering Assessment of PTI Building, Rangpur (Client: LGED); 04 CPTs (Gazipur City Corporation); 05 SPTs (Savar Pourashava); Extension Building Design (Well Dresses Ltd.).</li>
+              <li>Conducted subsurface exploration using SPT and CPT across Bangladesh, calculated site classification from SPT-N values, analyzed bearing capacity, and prepared soil investigation reports recommending optimal foundation types and sizes.</li>
+            </ul>
           </div>
-          <ul>
-            <li>Joint Research on Detail Engineering Assessment of PTI Building, Rangpur (Client: LGED); 04 CPTs (Gazipur City Corporation); 05 SPTs (Savar Pourashava); Extension Building Design (Well Dresses Ltd.).</li>
-            <li>Conducted subsurface exploration using SPT and CPT across Bangladesh, calculated site classification from SPT-N values, analyzed bearing capacity, and prepared soil investigation reports recommending optimal foundation types and sizes.</li>
-          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Software, Languages & Membership -->
-  <section id="skills" class="section-alt">
+  <!-- 06: Software, Languages & Membership -->
+  <section id="skills">
     <div class="section-inner">
-      <div class="section-header reveal">
+      <div class="section-header">
         <div class="section-label">06 — Expertise</div>
         <h2 class="section-title">Software Expertise</h2>
+        <div class="skills-hint">Tip: Click any software tag below to filter matching projects in the Experience Explorer.</div>
       </div>
-      <div class="skills-grid reveal">
-        <div class="skill-category">
+
+      <div class="skills-grid">
+        <div class="skill-category tilt-card">
           <div class="skill-cat-header">
             <div class="skill-cat-icon"><i data-lucide="cpu"></i></div>
             <div class="skill-cat-title">FEM / Numerical Modeling</div>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag">PLAXIS 2D</span>
-            <span class="skill-tag">PLAXIS 3D</span>
-            <span class="skill-tag">RS2 (Rocscience)</span>
+            <button type="button" class="skill-tag" data-skill-query="PLAXIS 2D">PLAXIS 2D</button>
+            <button type="button" class="skill-tag" data-skill-query="PLAXIS">PLAXIS 3D</button>
+            <button type="button" class="skill-tag" data-skill-query="RS2">RS2 (Rocscience)</button>
           </div>
         </div>
-        <div class="skill-category">
+
+        <div class="skill-category tilt-card">
           <div class="skill-cat-header">
             <div class="skill-cat-icon"><i data-lucide="layers"></i></div>
             <div class="skill-cat-title">Geotechnical Analysis</div>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag">GeoStudio SLOPE/W</span>
-            <span class="skill-tag">GeoStudio SEEP/W</span>
-            <span class="skill-tag">Settle3D</span>
-            <span class="skill-tag">Unwedge</span>
-            <span class="skill-tag">DIPS</span>
-            <span class="skill-tag">RocSupport</span>
+            <button type="button" class="skill-tag" data-skill-query="SLOPE/W">GeoStudio SLOPE/W</button>
+            <button type="button" class="skill-tag" data-skill-query="GeoStudio">GeoStudio SEEP/W</button>
+            <button type="button" class="skill-tag" data-skill-query="Settle3D">Settle3D</button>
+            <button type="button" class="skill-tag" data-skill-query="Unwedge">Unwedge</button>
+            <button type="button" class="skill-tag" data-skill-query="DIPS">DIPS</button>
+            <button type="button" class="skill-tag" data-skill-query="tunnel">RocSupport</button>
           </div>
         </div>
-        <div class="skill-category">
+
+        <div class="skill-category tilt-card">
           <div class="skill-cat-header">
             <div class="skill-cat-icon"><i data-lucide="ruler"></i></div>
             <div class="skill-cat-title">Structural &amp; CAD</div>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag">STAAD.Pro</span>
-            <span class="skill-tag">AutoCAD 2D</span>
+            <button type="button" class="skill-tag" data-skill-query="STAAD.Pro">STAAD.Pro</button>
+            <button type="button" class="skill-tag" data-skill-query="drawings">AutoCAD 2D</button>
           </div>
         </div>
-        <div class="skill-category">
+
+        <div class="skill-category tilt-card">
           <div class="skill-cat-header">
             <div class="skill-cat-icon"><i data-lucide="map-pinned"></i></div>
             <div class="skill-cat-title">GIS / Spatial Analysis</div>
           </div>
           <div class="skill-tags">
-            <span class="skill-tag">QGIS</span>
-            <span class="skill-tag">Google Earth Pro</span>
+            <button type="button" class="skill-tag" data-skill-query="QGIS">QGIS</button>
+            <button type="button" class="skill-tag" data-skill-query="reconnaissance">Google Earth Pro</button>
           </div>
         </div>
-        <div class="skill-category">
+
+        <div class="skill-category tilt-card">
           <div class="skill-cat-header">
             <div class="skill-cat-icon"><i data-lucide="file-text"></i></div>
             <div class="skill-cat-title">Productivity &amp; Standards</div>
@@ -2368,73 +923,64 @@
             <span class="skill-tag">MS Word</span>
             <span class="skill-tag">MS Excel</span>
             <span class="skill-tag">PowerPoint</span>
-            <span class="skill-tag">BNBC 2020 &amp; ASTM</span>
+            <button type="button" class="skill-tag" data-skill-query="BNBC 2020">BNBC 2020 &amp; ASTM</button>
           </div>
         </div>
       </div>
 
-      <div style="margin-top: 3.25rem;">
-        <div class="section-header reveal" style="margin-bottom: 1.5rem;">
-          <div class="section-label">Languages</div>
-          <h2 class="section-title" style="font-size: 1.7rem;">Language Proficiency</h2>
+      <div style="margin-top: 2.75rem;">
+        <div class="section-header" style="margin-bottom: 1.25rem;">
+          <div class="section-label">Languages &amp; Affiliation</div>
+          <h3 class="section-title" style="font-size: 1.55rem;">Language Proficiency &amp; Membership</h3>
         </div>
-        <div class="sub-grid-2 reveal">
-          <div class="lang-card">
+        <div class="sub-grid-2">
+          <div class="lang-card tilt-card">
             <div class="lang-head">
-              <span class="lang-name">English</span>
+              <span>English</span>
               <span class="lang-level">Professional Working Proficiency</span>
             </div>
             <div class="lang-bar"><div class="lang-fill" style="width: 95%;"></div></div>
           </div>
-          <div class="lang-card">
+          <div class="lang-card tilt-card">
             <div class="lang-head">
-              <span class="lang-name">Bangla</span>
+              <span>Bangla</span>
               <span class="lang-level">Native</span>
             </div>
             <div class="lang-bar"><div class="lang-fill" style="width: 100%;"></div></div>
           </div>
-        </div>
-      </div>
-
-      <div style="margin-top: 3.25rem;">
-        <div class="section-header reveal" style="margin-bottom: 1.5rem;">
-          <div class="section-label">Membership</div>
-          <h2 class="section-title" style="font-size: 1.7rem;">Professional Affiliation</h2>
-        </div>
-        <div class="membership-card reveal">
-          <div class="membership-icon">
-            <i data-lucide="award"></i>
-          </div>
-          <div>
-            <div class="membership-title">Member of The Institution of Engineers, Bangladesh (IEB)</div>
-            <div class="membership-id">Membership No. M-51075</div>
+          <div class="membership-card tilt-card">
+            <div class="membership-icon"><i data-lucide="award"></i></div>
+            <div>
+              <div class="membership-title">Member of The Institution of Engineers, Bangladesh (IEB)</div>
+              <div class="membership-id">Membership No. M-51075</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- References -->
-  <section id="references">
+  <!-- 07: References -->
+  <section id="references" class="section-alt">
     <div class="section-inner">
-      <div class="section-header reveal">
+      <div class="section-header">
         <div class="section-label">07 — References</div>
-        <h2 class="section-title">Trusted By</h2>
+        <h2 class="section-title">Professional References</h2>
       </div>
-      <div class="ref-grid reveal">
-        <div class="ref-card">
+      <div class="sub-grid-2">
+        <div class="ref-card tilt-card">
           <div class="ref-name">Prof. Dr. Hossain Md. Shahin</div>
-          <div class="ref-title">Dept. of Civil and Environmental Engineering<br>Islamic University of Technology (IUT), Board Bazar, Gazipur-1704</div>
+          <div class="ref-title">Professor, Dept. of Civil and Environmental Engineering<br>Islamic University of Technology (IUT)</div>
           <a href="mailto:shahin@iut-dhaka.edu" class="ref-contact">
-            <i data-lucide="mail"></i>
+            <i data-lucide="mail" style="width:15px;height:15px;"></i>
             shahin@iut-dhaka.edu
           </a>
         </div>
-        <div class="ref-card">
+        <div class="ref-card tilt-card">
           <div class="ref-name">Selim Reza</div>
-          <div class="ref-title">Senior Tunnel Design Engineer<br>SMEC International Pty Ltd., Anabil Tower, Gulshan-2, Dhaka 1212</div>
+          <div class="ref-title">Senior Tunnel Design Engineer<br>SMEC International Pty Ltd.</div>
           <a href="mailto:Selim.R@smec.com" class="ref-contact">
-            <i data-lucide="mail"></i>
+            <i data-lucide="mail" style="width:15px;height:15px;"></i>
             Selim.R@smec.com
           </a>
         </div>
@@ -2442,116 +988,91 @@
     </div>
   </section>
 
-  <!-- Real Contact Section -->
-  <section id="contact" class="section-alt">
+  <!-- 08: Contact -->
+  <section id="contact">
     <div class="section-inner">
-      <div class="section-header reveal">
+      <div class="section-header">
         <div class="section-label">08 — Contact</div>
         <h2 class="section-title">Get in Touch</h2>
-        <p class="section-subtitle">Available for geotechnical engineering, tunnel design, and civil infrastructure collaborations or roles.</p>
+        <p class="section-subtitle">Available for geotechnical, tunnelling, and underground infrastructure roles and collaborations.</p>
       </div>
 
       <div class="contact-grid">
-        <div class="contact-cards reveal">
+        <div class="contact-info-stack">
           <div class="contact-card">
-            <div class="contact-card-main">
-              <div class="contact-card-icon"><i data-lucide="mail"></i></div>
+            <div class="contact-row">
               <div>
-                <div class="contact-card-label">Email</div>
-                <div class="contact-card-value">
-                  <a href="mailto:mohaimenul.geo@gmail.com">mohaimenul.geo@gmail.com</a>
-                </div>
+                <div class="contact-lbl">Email</div>
+                <div class="contact-val"><a href="mailto:mohaimenul.geo@gmail.com">mohaimenul.geo@gmail.com</a></div>
               </div>
+              <button type="button" class="copy-btn" data-copy="mohaimenul.geo@gmail.com">Copy</button>
             </div>
-            <button type="button" class="copy-btn" data-copy="mohaimenul.geo@gmail.com" aria-label="Copy email address">
-              <i data-lucide="copy"></i>
-              <span>Copy</span>
-            </button>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-card-main">
-              <div class="contact-card-icon"><i data-lucide="phone"></i></div>
+            <div class="contact-row">
               <div>
-                <div class="contact-card-label">Phone</div>
-                <div class="contact-card-value">
-                  <a href="tel:+8801630457074">+880 1630 457 074</a>
-                </div>
+                <div class="contact-lbl">Phone / WhatsApp</div>
+                <div class="contact-val"><a href="tel:+8801630457074">+880 1630 457 074</a></div>
               </div>
+              <button type="button" class="copy-btn" data-copy="+8801630457074">Copy</button>
             </div>
-            <button type="button" class="copy-btn" data-copy="+880 1630 457 074" aria-label="Copy phone number">
-              <i data-lucide="copy"></i>
-              <span>Copy</span>
-            </button>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-card-main">
-              <div class="contact-card-icon"><i data-lucide="map-pin"></i></div>
+            <div class="contact-row">
               <div>
-                <div class="contact-card-label">Location</div>
-                <div class="contact-card-value">
-                  <span>Baridhara, Dhaka-1212, Bangladesh</span>
-                </div>
+                <div class="contact-lbl">Location</div>
+                <div class="contact-val">Sayednagar, B Block, Vatara, Baridhara, Dhaka-1212, Bangladesh</div>
               </div>
             </div>
           </div>
 
-          <div class="cv-card">
-            <div>
-              <div class="cv-card-title">Curriculum Vitae &amp; Profiles</div>
-              <p class="cv-card-desc">Download my CV PDF or connect via LinkedIn and ResearchGate.</p>
-            </div>
-            <div class="cv-card-actions">
-              <a href="CV-Mohaimenul_Islam.pdf" download="CV-Mohaimenul_Islam.pdf" class="btn btn-primary" style="padding:0.62rem 1.1rem; font-size:0.88rem;">
-                <i data-lucide="download" style="width:16px;height:16px;"></i>
+          <div class="contact-card">
+            <div style="font-family:'Chakra Petch',sans-serif;font-weight:700;margin-bottom:0.4rem;">Curriculum Vitae &amp; Profiles</div>
+            <p style="font-size:0.9rem;color:var(--muted);margin-bottom:0.9rem;">Download my full CV PDF or connect on LinkedIn and ResearchGate.</p>
+            <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+              <a href="CV-Mohaimenul_Islam.pdf" download="CV-Mohaimenul_Islam.pdf" class="btn btn-primary" style="padding:0.55rem 1rem;font-size:0.85rem;">
+                <i data-lucide="download" style="width:15px;height:15px;"></i>
                 Download CV
               </a>
-              <a href="CV-Mohaimenul_Islam.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.62rem 1.05rem; font-size:0.88rem;">
-                <i data-lucide="external-link" style="width:16px;height:16px;"></i>
+              <a href="CV-Mohaimenul_Islam.pdf" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.55rem 1rem;font-size:0.85rem;">
+                <i data-lucide="external-link" style="width:15px;height:15px;"></i>
                 View PDF
               </a>
-              <a href="https://www.linkedin.com/in/mohaimenulislam" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.62rem 1rem; font-size:0.88rem;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://www.linkedin.com/in/mohaimenulislam" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.55rem 1rem;font-size:0.85rem;">
                 LinkedIn
               </a>
-              <a href="https://www.researchgate.net/profile/Mohaimenul_Islam4" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.62rem 1rem; font-size:0.88rem;">
-                <i data-lucide="book-open" style="width:16px;height:16px;"></i>
+              <a href="https://www.researchgate.net/profile/Mohaimenul_Islam4" target="_blank" rel="noopener" class="btn btn-secondary" style="padding:0.55rem 1rem;font-size:0.85rem;">
                 ResearchGate
               </a>
             </div>
           </div>
         </div>
 
-        <div class="contact-form-card reveal">
-          <h3 class="contact-form-title">Send a Message</h3>
-          <p class="contact-form-sub">Compose an inquiry below to open directly in your email app, or copy the message for webmail.</p>
+        <div class="contact-form-card">
+          <h3 style="font-size:1.2rem;margin-bottom:0.35rem;">Send a Message</h3>
+          <p style="font-size:0.88rem;color:var(--muted);margin-bottom:1rem;">Compose an inquiry below to open in your email client or copy for webmail.</p>
           <form id="contact-form" novalidate>
             <div class="form-row">
               <div class="form-group">
                 <label for="sender-name">Your Name</label>
-                <input type="text" id="sender-name" name="name" class="form-control" placeholder="e.g. Dr. Rahman" required>
+                <input type="text" id="sender-name" class="form-control" placeholder="e.g. Dr. Rahman" required>
               </div>
               <div class="form-group">
                 <label for="sender-email">Your Email</label>
-                <input type="email" id="sender-email" name="email" class="form-control" placeholder="name@company.com" required>
+                <input type="email" id="sender-email" class="form-control" placeholder="name@company.com" required>
               </div>
             </div>
             <div class="form-group">
               <label for="message-subject">Subject</label>
-              <input type="text" id="message-subject" name="subject" class="form-control" placeholder="Project inquiry / Geotechnical &amp; Tunnel role" required>
+              <input type="text" id="message-subject" class="form-control" placeholder="Project inquiry / Geotechnical &amp; Tunnel role" required>
             </div>
             <div class="form-group">
               <label for="message-body">Message</label>
-              <textarea id="message-body" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+              <textarea id="message-body" class="form-control" placeholder="Write your message here..." required></textarea>
             </div>
             <div class="form-actions">
-              <button type="submit" class="btn btn-primary">
-                <i data-lucide="send" style="width:16px;height:16px;"></i>
+              <button type="submit" class="btn btn-primary" style="padding:0.6rem 1.1rem;font-size:0.86rem;">
+                <i data-lucide="send" style="width:15px;height:15px;"></i>
                 Open in Email App
               </button>
-              <button type="button" id="copy-message-btn" class="btn btn-secondary">
-                <i data-lucide="copy" style="width:16px;height:16px;"></i>
+              <button type="button" id="copy-message-btn" class="btn btn-secondary" style="padding:0.6rem 1.1rem;font-size:0.86rem;">
+                <i data-lucide="copy" style="width:15px;height:15px;"></i>
                 Copy Message
               </button>
             </div>
@@ -2563,329 +1084,23 @@
   </section>
 </main>
 
-<!-- Footer -->
-<footer>
-  <div class="footer-inner">
-    <div class="social-links">
-      <a href="mailto:mohaimenul.geo@gmail.com" class="social-link" title="Email" aria-label="Email">
-        <i data-lucide="mail"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/mohaimenulislam" target="_blank" rel="noopener" class="social-link" title="LinkedIn" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
-      <a href="https://www.researchgate.net/profile/Mohaimenul_Islam4" target="_blank" rel="noopener" class="social-link" title="ResearchGate" aria-label="ResearchGate">
-        <i data-lucide="book-open"></i>
-      </a>
-      <a href="CV-Mohaimenul_Islam.pdf" download="CV-Mohaimenul_Islam.pdf" class="social-link" title="Download CV (PDF)" aria-label="Download CV">
-        <i data-lucide="file-text"></i>
-      </a>
-      <a href="tel:+8801630457074" class="social-link" title="Phone" aria-label="Phone">
-        <i data-lucide="phone"></i>
-      </a>
+<!-- Command Palette Modal (Ctrl+K) -->
+<div id="cmd-overlay" class="cmd-overlay" role="dialog" aria-modal="true" aria-label="Command Palette" hidden>
+  <div class="cmd-dialog">
+    <div class="cmd-input-bar">
+      <i data-lucide="search" style="width:17px;height:17px;color:var(--accent);"></i>
+      <input type="text" id="cmd-input" class="cmd-input" placeholder="Jump to section, course page, or action...">
+      <span class="cmd-kbd">ESC</span>
     </div>
-    <p class="footer-text">
-      <strong>Mohaimenul Islam</strong> — Geotechnical &amp; Tunnel Engineer &middot; Dhaka-1212, Bangladesh
-    </p>
-    <p class="footer-text" style="margin-top: 0.65rem; font-size: 0.82rem;">
-      &copy; 2026 Mohaimenul Islam. All rights reserved.
-    </p>
+    <ul id="cmd-list" class="cmd-list"></ul>
   </div>
+</div>
+
+<footer>
+  <p><strong>Mohaimenul Islam</strong> &mdash; Geotechnical &amp; Tunnel Engineer &middot; Sayednagar, B Block, Vatara, Baridhara, Dhaka-1212, Bangladesh</p>
+  <p style="margin-top:0.45rem;font-size:0.82rem;">&copy; 2026 Mohaimenul Islam. All rights reserved.</p>
 </footer>
 
-<script>
-(function() {
-  document.documentElement.classList.add('js-ready');
-
-  function renderIcons() {
-    if (window.lucide && typeof window.lucide.createIcons === 'function') {
-      window.lucide.createIcons();
-    }
-  }
-
-  renderIcons();
-  window.addEventListener('load', renderIcons);
-
-  // Light / Dark Theme Toggle
-  var root = document.documentElement;
-  var themeToggle = document.getElementById('theme-toggle');
-  var themeLabel = document.getElementById('theme-label');
-
-  function syncThemeUI(theme) {
-    var isLight = theme === 'light';
-    var iconEl = document.getElementById('theme-icon');
-    if (themeLabel) {
-      themeLabel.textContent = isLight ? 'Dark' : 'Light';
-    }
-    if (themeToggle) {
-      themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
-    }
-    if (iconEl) {
-      iconEl.setAttribute('data-lucide', isLight ? 'moon' : 'sun');
-      renderIcons();
-    }
-  }
-
-  syncThemeUI(root.getAttribute('data-theme') || 'dark');
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function() {
-      var current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
-      var next = current === 'light' ? 'dark' : 'light';
-      root.setAttribute('data-theme', next);
-      try {
-        localStorage.setItem('portfolio-theme', next);
-      } catch (e) {}
-      syncThemeUI(next);
-    });
-  }
-
-  // Mobile Menu Drawer
-  var menuBtn = document.getElementById('mobile-menu-btn');
-  var mobileMenu = document.getElementById('mobile-menu');
-
-  function setMenuOpen(open) {
-    if (!menuBtn || !mobileMenu) return;
-    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    if (open) {
-      mobileMenu.removeAttribute('hidden');
-      mobileMenu.classList.add('open');
-    } else {
-      mobileMenu.classList.remove('open');
-      mobileMenu.setAttribute('hidden', '');
-    }
-    var iconEl = document.getElementById('mobile-menu-icon');
-    if (iconEl) {
-      iconEl.setAttribute('data-lucide', open ? 'x' : 'menu');
-      renderIcons();
-    }
-  }
-
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', function() {
-      var isOpen = mobileMenu.classList.contains('open');
-      setMenuOpen(!isOpen);
-    });
-
-    mobileMenu.querySelectorAll('a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        setMenuOpen(false);
-      });
-    });
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
-        setMenuOpen(false);
-      }
-    });
-
-    window.addEventListener('resize', function() {
-      if (window.innerWidth > 980 && mobileMenu.classList.contains('open')) {
-        setMenuOpen(false);
-      }
-    });
-  }
-
-  // Experience Filter
-  var filterButtons = document.querySelectorAll('.filter-btn');
-  var expItems = document.querySelectorAll('.exp-item');
-
-  function applyProjectFilter(filter) {
-    expItems.forEach(function(exp) {
-      var blocks = exp.querySelectorAll('.project-block');
-      var roleDividers = exp.querySelectorAll('.role-divider');
-      var visibleCount = 0;
-
-      blocks.forEach(function(block) {
-        block.classList.remove('first-visible');
-        var category = block.getAttribute('data-category');
-        var matches = filter === 'all' || category === filter;
-        if (matches) {
-          block.classList.remove('is-hidden');
-          if (visibleCount === 0) {
-            block.classList.add('first-visible');
-          }
-          visibleCount += 1;
-        } else {
-          block.classList.add('is-hidden');
-        }
-      });
-
-      roleDividers.forEach(function(divider) {
-        var group = divider.getAttribute('data-role-group');
-        var hasVisibleInRole = exp.querySelectorAll('.project-block[data-role="' + group + '"]:not(.is-hidden)').length > 0;
-        if (hasVisibleInRole) {
-          divider.classList.remove('is-hidden');
-        } else {
-          divider.classList.add('is-hidden');
-        }
-      });
-
-      if (visibleCount === 0) {
-        exp.classList.add('is-hidden');
-      } else {
-        exp.classList.remove('is-hidden');
-      }
-    });
-  }
-
-  applyProjectFilter('all');
-
-  filterButtons.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      filterButtons.forEach(function(b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      applyProjectFilter(btn.getAttribute('data-filter') || 'all');
-    });
-  });
-
-  // Scroll Reveal
-  var revealElements = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    var revealObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.02, rootMargin: '60px 0px' });
-
-    revealElements.forEach(function(el) {
-      revealObserver.observe(el);
-    });
-  } else {
-    revealElements.forEach(function(el) {
-      el.classList.add('visible');
-    });
-  }
-
-  // Active Navigation Highlight on Scroll
-  var sections = document.querySelectorAll('main section[id]');
-  var navLinks = document.querySelectorAll('.nav-links a, .mobile-drawer-links a');
-
-  function updateActiveNav() {
-    var scrollPos = window.scrollY + 120;
-    var activeId = 'home';
-    sections.forEach(function(sec) {
-      if (sec.offsetTop <= scrollPos) {
-        activeId = sec.getAttribute('id');
-      }
-    });
-    navLinks.forEach(function(link) {
-      var href = link.getAttribute('href');
-      if (href === '#' + activeId) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
-    });
-  }
-
-  window.addEventListener('scroll', updateActiveNav, { passive: true });
-  updateActiveNav();
-
-  // Copy Buttons in Contact Cards
-  function copyText(text, onSuccess) {
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(onSuccess).catch(function() {
-        fallbackCopy(text, onSuccess);
-      });
-    } else {
-      fallbackCopy(text, onSuccess);
-    }
-  }
-
-  function fallbackCopy(text, onSuccess) {
-    var ta = document.createElement('textarea');
-    ta.value = text;
-    ta.setAttribute('readonly', '');
-    ta.style.position = 'fixed';
-    ta.style.opacity = '0';
-    document.body.appendChild(ta);
-    ta.select();
-    try {
-      document.execCommand('copy');
-      onSuccess();
-    } catch (e) {}
-    document.body.removeChild(ta);
-  }
-
-  document.querySelectorAll('.copy-btn').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var text = btn.getAttribute('data-copy');
-      var label = btn.querySelector('span');
-      if (!text) return;
-      copyText(text, function() {
-        btn.classList.add('copied');
-        if (label) label.textContent = 'Copied!';
-        setTimeout(function() {
-          btn.classList.remove('copied');
-          if (label) label.textContent = 'Copy';
-        }, 1800);
-      });
-    });
-  });
-
-  // Contact Form (mailto + copy fallback)
-  var contactForm = document.getElementById('contact-form');
-  var copyMsgBtn = document.getElementById('copy-message-btn');
-  var formStatus = document.getElementById('form-status');
-
-  function getFormValues() {
-    return {
-      name: (document.getElementById('sender-name').value || '').trim(),
-      email: (document.getElementById('sender-email').value || '').trim(),
-      subject: (document.getElementById('message-subject').value || '').trim(),
-      message: (document.getElementById('message-body').value || '').trim()
-    };
-  }
-
-  function showFormStatus(msg, isError) {
-    if (!formStatus) return;
-    formStatus.textContent = msg;
-    formStatus.className = 'form-status ' + (isError ? 'error' : 'show');
-  }
-
-  function validateForm(vals) {
-    if (!vals.name || !vals.email || !vals.subject || !vals.message) {
-      showFormStatus('Please fill in your name, email, subject, and message.', true);
-      return false;
-    }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(vals.email)) {
-      showFormStatus('Please enter a valid email address.', true);
-      return false;
-    }
-    return true;
-  }
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var vals = getFormValues();
-      if (!validateForm(vals)) return;
-      var body = 'Name: ' + vals.name + '\nEmail: ' + vals.email + '\n\n' + vals.message;
-      var mailto = 'mailto:mohaimenul.geo@gmail.com?subject=' +
-        encodeURIComponent(vals.subject) +
-        '&body=' + encodeURIComponent(body);
-      showFormStatus('Opening your default email app addressed to mohaimenul.geo@gmail.com...', false);
-      window.location.href = mailto;
-    });
-  }
-
-  if (copyMsgBtn) {
-    copyMsgBtn.addEventListener('click', function() {
-      var vals = getFormValues();
-      if (!validateForm(vals)) return;
-      var formatted = 'To: mohaimenul.geo@gmail.com\nSubject: ' + vals.subject +
-        '\nFrom: ' + vals.name + ' <' + vals.email + '>\n\n' + vals.message;
-      copyText(formatted, function() {
-        showFormStatus('Message copied to clipboard — paste it into your preferred email client.', false);
-      });
-    });
-  }
-})();
-</script>
-
+<script src="assets/portfolio/portfolio.js"></script>
 </body>
 </html>
